@@ -1,0 +1,38 @@
+.product-section {
+	text-align: center;
+	padding-bottom: 40px;
+	&__title {
+		font-size: 18px;
+		font-family: $headings-font-family;
+		font-weight: $headings-font-weight;
+	}
+	&__list {
+		@include clearfix;
+		@include clearul;
+	padding: 10% 0 0;
+		
+	}
+	&__item {
+		margin-top: -10%;
+		img {
+			width: 100%;
+		}
+		&--left {
+			padding: 0 50% 0 0; 
+		}
+		&--right {
+			padding: 0 0 0 50%; 
+		}
+	}
+	@include sm-up {
+		text-align: left;
+		&__list {
+			padding: 0;
+		}
+		&__item {
+			float: left;
+			padding: 0;
+			margin: 0;
+		}
+	}
+}

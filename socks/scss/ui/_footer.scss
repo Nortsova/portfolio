@@ -1,0 +1,105 @@
+.footer {
+	background-color: $brand-color;
+	background-image: url("../images/bg-header.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 0 0;
+	padding: 60px 0;
+}
+.sign-up {
+	color: $brand-light;
+	overflow: hidden;
+	span{
+		font-size: 14px;
+		padding-bottom: 15px;
+		display: block;
+	}
+	input {
+		background-color: transparent;
+		border: 2px solid transparentize($brand-lightest, .3);
+		outline: none;
+		padding: 10px 20px;
+		font-size: 18px;
+		width: 60%;
+		float: left;
+	}
+	.submit {
+		width: 35%;
+		margin-left: 5%;
+		float: left;
+		border: 0px;
+		background-color: transparentize($brand-lightest, .3);
+		text-transform: uppercase;
+		color: $brand-darker;
+		&:hover, &:active, &:focus {
+			background-color: darken(transparentize($brand-lightest, .3), 20%);
+		}
+	}
+}
+.social-icons {
+	overflow: hidden;
+	svg {
+		width: 1em;
+		height: 1em;
+	}
+	li {
+		float: left;
+		padding: 0 15px;
+	}
+}
+.navigation-list {
+	text-transform: uppercase;
+	font-size: 24px;
+	padding-top: 50px;
+	ul {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+	}
+	> ul {
+		display: table;
+		width: 100%;
+		text-align: center;
+		> li {
+			display: table-cell;
+
+		}
+	}
+	a {
+		color: $brand-light;
+		&:hover, &:focus {
+			text-decoration: none;
+			color: darken($brand-light, 20%)
+		}
+	}
+}
+@media  (max-width: $screen-xs-max) {
+	.navigation-list {
+		ul {
+			margin: 0;
+			padding: 0;
+			list-style: none;
+		}
+		> ul {
+			display: block;
+			width: 100%;
+			text-align: center;
+			> li {
+				display: block;
+			}
+		}
+		.social-icons {
+			li {
+				float: none;
+				display: inline-block;
+			}
+		}
+		a {
+			color: $brand-light;
+			&:hover, &:focus {
+				text-decoration: none;
+				color: darken($brand-light, 20%)
+			}
+		}
+	}
+}

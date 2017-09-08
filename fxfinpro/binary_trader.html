@@ -1,0 +1,683 @@
+<!doctype html>
+<html lang="ru">
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>binary_trader page</title>
+        <meta content="" name="description">
+        <meta content="" name="keywords">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <meta content="telephone=no" name="format-detection">
+        <!-- This make sence for mobile browsers. It means, that content has been optimized for mobile browsers -->
+        <meta name="HandheldFriendly" content="true">
+
+
+        <!--[if (gt IE 9)|!(IE)]><!-->
+        <link href="assets/css/main.min.css" rel="stylesheet" type="text/css">
+        <!--<![endif]-->
+
+        <meta property="og:title" content="" />
+        <meta property="og:url" content="" />
+        <meta property="og:description" content="" />
+        <meta property="og:image" content="" />
+        <meta property="og:image:type" content="image/jpeg" />
+        <meta property="og:image:width" content="500" />
+        <meta property="og:image:height" content="300" />
+        <meta property="twitter:description" content="" />
+        <link rel="image_src" href="" />
+
+        <link rel="icon" type="image/x-icon" href="favicon.ico">
+        <script>
+            (function(H){H.className=H.className.replace(/\bno-js\b/,'js')})(document.documentElement)
+        </script>
+
+    </head>
+
+    <body class="page">
+
+
+
+        <div class="header-base"></div>
+        <header class="header" data-spy="affix" data-offset-top="180">
+            <div class="affix-none">
+                <div class="top-menu">
+                    <div class="container relative-xs">
+                        <div class="xs-block relative-xs">
+                            <a class="navbar-toggle first-bar" data-toggle="collapse" href="#mobMenu2">
+                                <span class="icon-bar"></span>  <span class="icon-bar"></span>  <span class="icon-bar"></span> 
+                            </a>
+                        </div>
+                        <div id="mobMenu2" class="mobCollapse firstCollapse collapse  pull-left top-menu">
+                            <ul class="top-menu-list">
+                                <li><a href="#">Вопросы и ответы (FAQ) </a>
+                                </li>
+                                <li><a href="#">Типы счетов</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="pull-right">
+                            <div class="btn-group">
+                                <button class="btn btn-dark dropdown-toggle" data-toggle="dropdown">
+                                    <span class="icon-lang ru"></span> Русский <span class="caret"></span>
+                                </button>
+                                <ul class="dropdown-menu dropdown-lang pull-right">
+                                    <li><a href="#"><span class="icon-lang ru"></span>Русский</a>
+                                    </li>
+                                    <li><a href="#"><span class="icon-lang en"></span>English</a>
+                                    </li>
+                                    <li><a href="#"><span class="icon-lang cn"></span>Китайский</a>
+                                    </li>
+                                    <li><a href="#"><span class="icon-lang ar"></span>Арабский</a>
+                                    </li>
+                                    <li><a href="#"><span class="icon-lang kr"></span>Корейский</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <a href="#"><span class="icon-lock"></span> Личный кабинет</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="navbar">
+                    <div class="row flex flex-middle flex-wrap affix-flex flex-sm flex-space-between">
+                        <div class="span3">
+                            <a href="#" class="logo">
+                                <img src="assets/images/content/logo.png" alt="">
+                            </a>
+                        </div>
+                        <div class="span4 affix-none  sm-none">
+                            <ul class="nav">
+                                <li><a href="#">Контакты</a>
+                                </li>
+                                <li><a href="#">Новости</a>
+                                </li>
+                                <li><a href="#">Демо конкурс</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="span5 relative affix-order1">
+                            <div class="navbar-info flex flex-middle flex-flex-end">
+
+                                <strong class="font-lg sm-none affix-none">+357 2526 2102</strong>
+                                <div class="search-group flex flex-middle affix-none">
+                                    <div id="searchCollapse" style="display: none;" class="search-body search">
+                                        <input type="text" name="search" placeholder="Поиск...">
+                                    </div>
+                                    <a id="searchBtn" href="#">
+                                        <span class="icon-search"></span>
+                                    </a>
+                                </div>
+                                <div class="mob-menu-btn">
+                                    <a class="navbar-toggle" data-toggle="collapse" href="#mobMenu">
+                                        <span class="icon-bar"></span>  <span class="icon-bar"></span>  <span class="icon-bar"></span> 
+                                    </a>
+                                </div>
+                                <div class="xs-none">
+                                    <a href="#" class="btn btn-uppercase"><strong>Открыть счет</strong></a>
+                                </div>
+                            </div>
+                            <div class="xs-none affix-none">
+                                <span class="header-warning">Вы рискуете своим капиталом. Вы можете потерять больше, чем вкладываете</span>
+                            </div>
+                        </div>
+                        <div class="span12">
+                            <div id="mobMenu" class="mobCollapse collapse">
+                                <ul class="header-menu">
+                                    <li class="dropdown">
+                                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">О компании <span class="icon icon-chevron-down"></span></a>
+                                        <div class="dropdown-menu dropdown-nav" role="menu" aria-labelledby="dLabel">
+                                            <div class="section-padding">
+                                                <div class="row-fluid">
+                                                    <div class="span4">
+                                                        <h4>Компания FXFINPRO Capital</h4>
+                                                        <ul>
+                                                            <li><a href="#">Информация о FXFINPRO Capital</a>
+                                                            </li>
+                                                            <li><a href="#">Продукты и услуги</a>
+                                                            </li>
+                                                            <li><a href="#">Карьера</a>
+                                                            </li>
+                                                            <li><a href="#">Новости компании</a>
+                                                            </li>
+                                                            <li><a href="#">Полезные статьи</a>
+                                                            </li>
+                                                            <li><a href="#">Контакты</a>
+                                                            </li>
+                                                            <li><a href="#">Ввод - вывод средств</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="span4">
+                                                        <h4>Регулирование и партнеры</h4>
+                                                        <ul>
+                                                            <li><a href="#">Регулирование</a>
+                                                            </li>
+                                                            <li><a href="#">Партнеры и консультанты</a>
+                                                            </li>
+                                                            <li><a href="#">Юридические документы</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="span4">
+                                                        <h4>Почему FXFINPRO Capital</h4>
+                                                        <ul>
+                                                            <li><a href="#">Наши преимущества</a>
+                                                            </li>
+                                                            <li><a href="#">Награды и Премии</a>
+                                                            </li>
+                                                            <li><a href="#">Регулируемый Европейский ECN/STP-брокер</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="dropdown">
+                                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Трейдинг <span class="icon icon-chevron-down"></span></a>
+                                        <div class="dropdown-menu dropdown-nav" role="menu" aria-labelledby="dLabel">
+                                            <div class="section-padding">
+                                                <div class="row-fluid">
+                                                    <div class="span4">
+                                                        <h4>Институциональным клиентам</h4>
+                                                        <ul>
+                                                            <li><a href="#">Профессиональный доступ к ликвидности</a>
+                                                            </li>
+                                                            <li><a href="#">Программный доступ и интеграция (API / FIX)</a>
+                                                            </li>
+                                                            <li><a href="#">Институциональным клиентам</a>
+                                                            </li>
+                                                            <li><a href="#">White Label</a>
+                                                            </li>
+                                                            <li><a href="#">Представляющий брокер</a>
+                                                            </li>
+                                                            <li><a href="#">Кастодиальный счёт Forex</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="span4">
+                                                        <h4>Рынки и тарифы</h4>
+                                                        <ul>
+                                                            <li><a href="#">Рынки FOREX и CFD</a>
+                                                            </li>
+                                                            <li><a href="#">Рынки фьючерсов и опционов</a>
+                                                            </li>
+                                                            <li><a href="#">Рынки акций и ETF</a>
+                                                            </li>
+                                                            <li><a href="#">CFD на акции</a>
+                                                            </li>
+                                                            <li><a href="#">Опционы на акции и индексы</a>
+                                                            </li>
+                                                            <li><a href="#">Рынок облигаций</a>
+                                                            </li>
+                                                        </ul>
+
+                                                    </div>
+                                                    <div class="span4">
+                                                        <h4>Торговые платформы</h4>
+                                                        <ul>
+                                                            <li><a href="#">FXFIN Protrader 3</a>
+                                                            </li>
+                                                            <li><a href="#">FXFINPRO Metatrader 4</a>
+                                                            </li>
+                                                            <li><a href="#">FXFINPRO Trader Workstation</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="dropdown">
+                                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">ПАММ счета <span class="icon icon-chevron-down"></span></a>
+                                        <div class="dropdown-menu dropdown-nav dropdown-center" role="menu" aria-labelledby="dLabel">
+                                            <div class="padding-sm">
+                                                <div class="row-fluid flex flex-center text-center flex-wrap">
+                                                    <div class="span4">
+                                                        <ul>
+                                                            <li><a href="#">ПАММ управляющий</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="span4">
+                                                        <ul>
+
+                                                            <li><a href="#">Инвестировать в ПАММ</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="dropdown">
+                                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Рынки и инфо <span class="icon icon-chevron-down"></span></a>
+                                        <div class="dropdown-menu dropdown-nav dropdown-center" role="menu" aria-labelledby="dLabel">
+                                            <div class="section-padding">
+                                                <div class="row-fluid">
+                                                    <div class="span4">
+                                                        <h4>Технический анализ</h4>
+                                                        <ul>
+                                                            <li><a href="#">Forex и CFD</a>
+                                                            </li>
+                                                            <li><a href="#">Товарные фьючерсы</a>
+                                                            </li>
+                                                            <li><a href="#">Фьючерсы на индексы</a>
+                                                            </li>
+                                                            <li><a href="#">Акции</a>
+                                                            </li>
+                                                        </ul>
+                                                        <h4>Фундаментальный анализ</h4>
+                                                        <ul>
+                                                            <li><a href="#">Forex и CFD</a>
+                                                            </li>
+                                                            <li><a href="#">Товарные фьючерсы</a>
+                                                            </li>
+                                                            <li><a href="#">Фьючерсы на индекс</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="span4">
+                                                        <h4>Прогнозы</h4>
+                                                        <ul>
+                                                            <li><a href="#">Прогнозы Форекс</a>
+                                                            </li>
+                                                            <li><a href="#">Прогнозы экспертов</a>
+                                                            </li>
+                                                            <li><a href="#">Прогноз по акциям</a>
+                                                            </li>
+                                                        </ul>
+
+                                                    </div>
+                                                    <div class="span4">
+                                                        <h4>Обзор рынков</h4>
+                                                        <ul>
+                                                            <li><a href="#">Экономический календарь</a>
+                                                            </li>
+                                                            <li><a href="#">Графики</a>
+                                                            </li>
+                                                            <li><a href="#">Конвертер валют</a>
+                                                            </li>
+                                                            <li><a href="#">Обмен валют</a>
+                                                            </li>
+                                                            <li><a href="#">Тарифы и комиссии</a>
+                                                            </li>
+                                                            <li><a href="#">Торговые сессии</a>
+                                                            </li>
+                                                            <li><a href="#">Валютная биржа</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="dropdown">
+                                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Обучение <span class="icon icon-chevron-down"></span></a>
+                                        <div class="dropdown-menu dropdown-nav dropdown-center" role="menu" aria-labelledby="dLabel">
+                                            <div class="section-padding">
+                                                <div class="row-fluid">
+                                                    <div class="span4">
+                                                        <h4>Популярно о рынках</h4>
+                                                        <ul>
+                                                            <li><a href="#">Популярно о рынках фьючерсов</a>
+                                                            </li>
+                                                            <li><a href="#">Популярно о рынках акций</a>
+                                                            </li>
+                                                            <li><a href="#">Популярно о рынках FOREX и CFD</a>
+                                                            </li>
+                                                            <li><a href="#">Анализ и аналитика рынка Форекс</a>
+                                                            </li>
+                                                            <li><a href="#">ECN Брокер</a>
+                                                            </li>
+                                                            <li><a href="#">Сегрегированные счета</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="span4">
+                                                        <h4>Основы торговли и управления инвестициями</h4>
+                                                        <ul>
+                                                            <li><a href="#">Трейдинг для начинающих</a>
+                                                            </li>
+                                                            <li><a href="#">Психология торговли и управление капиталом</a>
+                                                            </li>
+                                                            <li><a href="#">Торговые стратегии Форекс</a>
+                                                            </li>
+                                                            <li><a href="#">Дополнительный заработок</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="span4">
+                                                        <h4>Вспомогательные ресурсы</h4>
+                                                        <ul>
+                                                            <li><a href="#">Словарь биржевых терминов</a>
+                                                            </li>
+                                                            <li><a href="#">Полезные линки и загрузки</a>
+                                                            </li>
+                                                            <li><a href="#">Курсы и вебинары</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li><a href="#">Партнерские программы</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </header>
+        <div class="container">
+            <ul class="breadcrumbs">
+                <li><a href="#">Главная</a>
+                </li>
+                <li><span>Web BinaryTrader</span>
+                </li>
+            </ul>
+        </div>
+        <div class="light-bg">
+            <div class="section-padding">
+                <div class="container">
+
+
+
+                    <div class="row flex flex-middle flex-wrap">
+                        <div class="span6 span6-xs span12-xxs">
+
+                            <h2>Web BinaryTrader</h2>
+
+                            <p>Платформа Web Binary Trader - это полнофункциональное решение для торговли бинарными опционами. WebBinaryTrader – простота использования, максимальное удобство, интуитивное управление, настраиваемое под индивидуальные предпочтения
+                                пользователя</p>
+
+
+
+                        </div>
+
+
+                        <div class="span6 span6-xs span12-xxs">
+                            <img src="assets/images/content/image20.png" alt="">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+        <div class="container">
+            <div class="section-padding">
+                <div class="row">
+                    <div class="span9 span12-sm">
+                        <div class="main-block content">
+                            <h3>Основные характеристики:</h3>
+                            <ul class="check-list">
+                                <li>Легкость трейдинга – простота и доступность понимания</li>
+                                <li>Предопределенные выплаты и риски – в отличие от традиционных ванильных опционов, возможная прибыль биноминальна, предопределена и работает по принципу "все или ничего"</li>
+                                <li>Выплаты – На контракте с прибылью можно заработать от 70% заплаченной премии/размера контракта до 90%</li>
+                                <li>Небольшие торговые объемы – начиная от 1 USD</li>
+                                <li>Отсутствие комиссий. Не взимается дополнительная комиссия к премии, заплаченной трейдером</li>
+                                <li>Тиковые цены и графики непосредственно с SWFX</li>
+                                <li>Детализированные журналы и отчеты</li>
+                                <li>Настраиваемые графики, интерфейс и начальные условия контракта</li>
+                            </ul>
+                            <div class="padding-min">
+                                <h3>Скриншоты </h3>
+                                <ul class="screen-list">
+                                    <li>
+                                        <a href="#screen01" role="button" data-toggle="modal">
+                                            <img src="assets/images/content/screen01.png" alt="">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#screen02" role="button" data-toggle="modal">
+                                            <img src="assets/images/content/screen02.png" alt="">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#screen03" role="button" data-toggle="modal">
+                                            <img src="assets/images/content/screen03.png" alt="">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#screen04" role="button" data-toggle="modal">
+                                            <img src="assets/images/content/screen04.png" alt="">
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="span3 span12-sm">
+
+                        <div class="sidebar">
+                            <div class="content">
+                                <h5 class="text-uppercase">загрузки</h5>
+                                <div class="sidebar-btns">
+                                    <a href="#" class="btn text-uppercase"><strong>скачать платформу</strong></a>
+                                    <a href="#" class="btn btn-gray text-uppercase"><strong>документация</strong></a>
+                                </div>
+
+                                <div class="padding-min">
+                                    <h5 class="text-uppercase">заметки</h5>
+                                    <p>Платформу Web BinaryTrader можно скачать из кабинета пользователя. Для доступа в кабинет необходимо пройти регистрацию, а также верифицировать свой телефон и email.</p>
+                                </div>
+                                <h5 class="text-uppercase">системные требования</h5>
+                                <p>Windows Vista/7/8
+                                    <br>Chrome, Opera, Explorer
+                                    <br>iOS и Android OS
+                                    <br>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal -->
+        <div id="screen01" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+
+            <div class="modal-inner">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                <img src="assets/images/content/screen01.png" alt="">
+            </div>
+        </div>
+        <div id="screen02" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+
+            <div class="modal-inner">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                <img src="assets/images/content/screen02.png" alt="">
+            </div>
+        </div>
+        <div id="screen03" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+            <img src="assets/images/content/screen03.png" alt="">
+        </div>
+        <div id="screen04" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+
+            <div class="modal-inner">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                <img src="assets/images/content/screen04.png" alt="">
+            </div>
+        </div>
+
+
+        <div class="main-bg">
+            <div class="container">
+                <div class="section-padding">
+                    <div class="row flex flex-center">
+                        <div class="span9">
+                            <div class="text-center">
+                                <p>Напоминаем вам, что, несмотря на то, что маржинальная торговля деривативами может принести прибыль, важно отметить, что она также несет в себе высокий уровень риска. Пожалуйста, внимательно прочитайте 'Уведомление об общих
+                                    рисках’ и ‘Уведомление о рисках Финансовых инструментов и Инвестиционных услуг’.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="footer">
+            <div class="light-footer">
+                <div class="container">
+                    <div class="footer-padding">
+                        <div class="row">
+                            <div class="span4">
+                                <h4>Главный офис</h4>
+                                <p>Cyprus, Limassol
+                                    <br>Nikou Pattichi 82, Maritania Court, 1 Floor, Office 101, Area Code 3070 Limassol, Cyprus
+                                </p>
+                                <strong>
+            							+357 2526 2102
+            						</strong>
+                            </div>
+                            <div class="span4">
+                                <h4>Демо-конкурс</h4>
+                                <p>Принимайте участие в конкурсе и получайте реальные денежные призы для торговли на валютном рынке Forex. Конкурс проводится на демо-счетах – участвуйте без риска потерять свои вложения!
+                                </p>
+                                <a href="#" class="text-uppercase">
+            							Подробнее <span class="icon icon-arrow-right"></span>
+            						</a>
+                            </div>
+                            <div class="span4">
+                                <h4>Подписка на новости</h4>
+                                <div class="form-group">
+                                    <input type="text" class="input" placeholder="Ваш email">
+                                    <button class="form-btn btn"><span class="icon icon-send"></span>
+                                    </button>
+                                </div>
+                                <p>Только полезная информация. Никакого спама.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="dark-footer">
+                <div class="container">
+                    <div class="footer-padding">
+                        <div class="flex flex-space-between flex-wrap">
+                            <div class="info-list">
+                                <h4>О компании</h4>
+                                <ul>
+                                    <li><a href="#">Профиль компании</a>
+                                    </li>
+                                    <li><a href="#">Партнерские программы</a>
+                                    </li>
+                                    <li><a href="#">Вопросы и ответы (FAQ)</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="info-list">
+                                <h4>Трейдинг</h4>
+                                <ul>
+                                    <li><a href="#">Опытным трейдерам</a>
+                                    </li>
+                                    <li><a href="#">Сервисы трейдерам</a>
+                                    </li>
+                                    <li><a href="#">Рынки и тарифы</a>
+                                    </li>
+                                    <li><a href="#">Торговые платформы</a>
+                                    </li>
+                                    <li><a href="#">Институциональным клиентам</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="info-list">
+                                <h4>Инвестиции</h4>
+                                <ul>
+                                    <li><a href="#">Сервисы инвесторам</a>
+                                    </li>
+                                    <li><a href="#">Управление инвестиционным портфелем</a>
+                                    </li>
+                                    <li><a href="#">Инвестиционные продукты</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="info-list">
+                                <h4>Рынок инфо</h4>
+                                <ul>
+                                    <li><a href="#">Технический анализ</a>
+                                    </li>
+                                    <li><a href="#">Фундаментальный анализ</a>
+                                    </li>
+                                    <li><a href="#">Прогнозы</a>
+                                    </li>
+                                    <li><a href="#">Обзор рынков</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="container">
+                    <div class="footer-padding">
+                        <div class="row">
+                            <div class="span6">
+                                <h4>Предупреждение о рисках</h4>
+                                <p>Торговля сложными финансовыми инструментами, такими как Акции, Фьючерсы, Валютные пары ('Forex'), Контракты на разницу ('CFD'), Индексы, Опционы и иными производными финансовыми инструментами, несет высокий уровень риска
+                                    и не всегда подходит тому или иному инвестору. Высокий уровень кредитного плеча может работать как на Вас, так и против Вас. Перед началом торговли на любом из этих рынков вы должны внимательно изучить ваши инвестиционные
+                                    цели, уровень опыта и отношение к риску. Существует вероятность, что вы можете понести частичную или полную потерю ваших начальных инвестиций, таким образом, вы не должны инвестировать средства, которые вы не можете
+                                    позволить себе потерять. Вы должны быть в курсе всех рисков, связанных с этими финансовыми рынками, и обратиться за советом к независимому финансовому эксперту, в случае, если у Вас есть какие-либо вопросы или сомнения.
+                                    Пожалуйста, внимательно прочитайте 'Уведомление об общих рисках' и 'Уведомление о рисках Финансовых инструментов и Инвестиционных услуг'</p>
+                            </div>
+                            <div class="span6">
+                                <h4>Правовая информация</h4>
+                                <p>Домен 'fxfinpro.com' принадлежит кипрской инвестиционной компании 'PFX Financial Professionals Limited', зарегистрированной в Реестре Компаний Кипра в Никосии под номером HE 237840. Офис компании расположен по адресу 82
+                                    Nikou and Despina Pattichi Avenue, Maritania Court, Office 101, Kato Polemedia, 3070 Limassol, Cyprus. 'PFX Financial Professionals Limited' регулируется Кипрской комиссией по ценным бумагам и биржам ('CySEC') под регистрационным
+                                    номером 193/13. 'PFX Financial Professionals Limited' осуществляет свою деятельность в соответствии с Директивой Европейского союза 'О рынках финансовых инструментов' ('MiFID')</p>
+                                <h4>Региональные ограничения</h4>
+                                <p>'PFX Financial Professionals Limited' не предоставляет услуги гражданам США, Японии, Бельгии, Северной Кореей и Ирана</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="container light-text">
+                    <div class="footer-padding">
+                        <h4>Оставайтесь на связи</h4>
+                        <div class="row ">
+                            <div class="span4 span6-sm">
+                                <ul class="social-list">
+                                    <li><a href="#"><span class="icon icon-facebook"></span></a>
+                                    </li>
+                                    <li><a href="#"><span class="icon icon-twitter"></span></a>
+                                    </li>
+                                    <li><a href="#"><span class="icon icon-instagram"></span></a>
+                                    </li>
+                                    <li><a href="#"><span class="icon icon-vk"></span></a>
+                                    </li>
+                                    <li><a href="#"><span class="icon icon-youtube"></span></a>
+                                    </li>
+                                    <li><a href="#"><span class="icon icon-linkedin2"></span></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="span8 span6-sm">
+                                <div class="padding-sm">Все права защищены. Копирование информации, представленной на сайте, разрешено с указанием ссылки на источник. &copy; 2013-2016 'FXFINPRO CAPITAL'</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+
+
+
+        <!-- Main scripts. You can replace it, but I recommend you to leave it here     -->
+        <script src="assets/js/main.min.js"></script>
+    </body>
+
+</html>

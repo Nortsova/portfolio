@@ -1,0 +1,19 @@
+.nav {
+	@include clearfix;
+	@include clearul;
+	padding-bottom: 15px;
+	font-size: 24px;
+	li {
+		padding: 0px 10px;
+		a {
+			color: $brand-color;
+			&:hover, &:focus {
+				text-decoration: none;
+				color: transparentize($brand-color, .3);
+			}
+		}
+		@media (min-width: $grid-float-breakpoint) {
+			float: left;
+		}
+	}
+}

@@ -1,0 +1,23 @@
+.pagination {
+	@include clearul;
+	@include clearfix;
+	float: right;
+	padding-bottom: 20px;
+	&__item {
+		float: left;
+		cursor: pointer;
+		padding: 0 5px;
+		&:hover, &:focus {
+			a {
+			text-decoration: underline;
+			}
+		}
+		&.active {
+
+			text-decoration: underline;
+		}
+		a {
+			color: $brand-color;
+		}
+	}
+}

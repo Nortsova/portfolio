@@ -1,0 +1,17 @@
+.link-cart {
+	color: $brand-color;
+	display: block;
+	text-align: center;
+	padding: 20px 0;
+	&:hover, &:focus {
+		text-decoration: none;
+		color: lighten($brand-color, 20%);
+	}
+	svg {
+		width: 1.2em;
+		height: 1.2em;
+	}
+	@include sm-up {
+		display: none;
+	}
+}

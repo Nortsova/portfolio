@@ -1,0 +1,135 @@
+.first-footer {
+	background-color: $base-color-dark;
+	padding: 10px 0;
+}
+.second-footer {
+	background-color: $base-color-darker;
+}
+.footer {
+	color: $base-color-the-lightest;
+	h1,h2,h3,h4,h5,h6 {
+		color: $base-color-the-lightest;
+		text-transform: uppercase;
+		font-family:$heading-font;
+		font-weight: $lato-bold-weight;
+		font-size: 16px;
+		padding: 5px 0 10px;
+	}
+	p {
+		color: $base-color-no-light;
+		font-family: $content-font;
+		font-weight: $content-font-weight;
+		font-size: 14px;
+	}
+	.who-we {
+		.logo {
+			display: block;
+			padding-bottom: 20px;
+		}
+	}
+	a {
+		color: $main-brand-color;
+		font-family: $content-font;
+		font-weight: $link-font-weight;
+		font-size: 15px;
+	}
+	.info-list {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		span {
+			display: block;
+			color: $base-color-no-light;
+			font-family: $content-font;
+			font-weight: $content-font-weight;
+			font-size: 14px;
+		}
+	}
+}
+.submit {
+	position: relative;
+	input {
+		&[type="text"] {
+			width: 100%;
+			background-color: $bg-input;
+			border: none;
+			border-radius: $border-radius-input;
+			padding: 10px 40% 10px 10px;
+			&:focus, &:hover {
+				outline: none;
+				border: none;
+			}
+		}
+		&[type="submit"] {
+			position: absolute;
+			right: 3px;
+			top:3px;
+		}
+	}
+}
+
+.second-footer {
+	padding: 18px 0;
+	position: relative;
+	.copy {
+		color: $base-color-no-light;
+		font-family: $content-font;
+		font-weight: $content-font-weight;
+		font-size: 14px;
+	}
+	.up {
+		position: absolute;
+		right: 1%;
+		top: 4%;
+		color: transparentize($base-color-the-lightest, .75);
+		padding: 10px 14px;
+		border-radius: $border-radius-input;
+		&:hover, &:focus {
+			color: $main-brand-color;
+			background-color: $dark-brand-color;
+		}
+		&:active {
+			box-shadow: none;
+		}
+		.glyphicon {
+			font-size: 14px;
+		}
+	}
+
+}
+
+.footer-nav {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	float: right;
+	li {
+		float: left;
+		padding: 0 10px;
+		position: relative;
+		&:after {
+			content: "";
+			width: 2px;
+			height: 2px;
+			border-radius: 100%;
+			display: block;
+			position: absolute;
+			background-color: $base-color-no-light;
+			right: 0;
+			top: 45%;
+		}
+		&:last-child:after {
+			display: none;
+		}
+		a {
+			color: $base-color-no-light;
+			font-family: $content-font;
+			font-weight: $content-font-weight;
+			font-size: 14px;
+			&:hover, &:active, &:focus {
+				color: $main-brand-color;
+				text-decoration: none;
+			}
+		}
+	}
+}

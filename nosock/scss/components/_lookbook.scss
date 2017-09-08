@@ -1,0 +1,110 @@
+.lookbook {
+	color: $brand-color;
+	
+	.h2 {
+		text-transform: uppercase;
+		font-size: 18px;
+		text-align: center;
+	}
+	@include sm-up {
+		background-image: url("../images/bg-1.png"), url("../images/bg-2.png"), url("../images/bg-3.png");
+		background-position: 20% 10%, 80% 50%, 20% 80%;
+		background-repeat: no-repeat;
+	}
+}
+.look-list {
+	@include clearul;
+	padding: 0 20px;
+	overflow: hidden;
+	&__img {
+		max-width: 100%;
+	}
+	&__link {
+		display: block;
+		width: 80%;
+		@include xs-up {
+			width: 56%;
+		}
+		@include sm-up {
+			width: 30%;
+		}
+	}
+	&__item {
+		@include clearfix;
+		padding-bottom: 30px;
+		position: relative;
+		font-size: 14px;
+		&__caption {
+			position: absolute;
+			text-transform: uppercase;
+			font-family: $headings-font-family;
+			font-weight: $headings-font-weight;
+			line-height: $headings-line-height;
+			display: block;
+		}
+		&--left {
+			.look-list__link {
+				float: left;
+				@include xs-up {
+					margin: 0 44% 0 0;
+				}
+				@include sm-up {
+					margin: 0 0 0 70%;
+				}
+			}
+			.look-list__item__caption {
+				right: 0;
+				top: 10%;
+				@include sm-up {
+					right: 28%;
+				}
+			}
+		}
+
+		&--right {
+			.look-list__link {
+				float: right;
+				@include xs-up {
+					margin: 0 0 0 44%;
+				}
+				@include sm-up {
+					margin: 0 50% 0 20%;
+				}
+			}
+			.look-list__item__caption {
+				left: 0;
+				bottom: 10%;
+				@include sm-up {
+					left: 48%;
+					bottom: 15%;
+				}
+			}
+		}
+		&--center {
+			.look-list__link {
+				@include sm-up {
+					margin: 0 20% 0 50%;
+				}
+			}
+			.look-list__item__caption {
+				@include sm-up {
+					left: 40%;
+				}
+			}
+		}
+		
+	}
+
+	&__link + &__link {
+		transform: translate(-60px, -60%);
+		margin-bottom: -50%;
+		@include xs-up {
+			transform: translate(-60px, -60%);
+			margin-bottom: -30%;
+		}
+		@include sm-up {
+			transform: translate(-60px, -80%);
+			margin-bottom: -30%;
+		}
+	}
+}

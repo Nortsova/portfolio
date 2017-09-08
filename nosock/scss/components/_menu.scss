@@ -1,0 +1,53 @@
+.menu {
+	@include clearul;
+	@include clearfix;
+	display: table;
+	width: 100%;
+	text-align: center;
+	padding: 10px 0;
+	margin-bottom: 40px;
+	background-color: darken($brand-inverse-color, 33%);
+	&__item {
+		display: table-cell;
+		a {
+			color: lighten($brand-color, 33%);
+			&:hover, &:focus {
+				text-decoration: none;
+			}
+		}
+		&:hover, &:focus, &.active {
+			a {
+				color: $brand-color;
+			}
+		}
+	}
+	@include sm-up {
+		background-color: transparent;
+		display: block;
+		text-align: left;
+		&__item {
+			display: block;
+		}
+	}
+	&__drop-list {
+		padding: 0 0 0 20px;
+		display: none;
+		.menu__item {
+			&:hover, &.active {
+				a {
+					text-decoration: underline;
+					&:focus {
+						text-decoration: underline;
+					}
+				}
+			}
+		}
+	}
+	@include sm-up {
+		&__item.active {
+			.menu__drop-list {
+				display: block;
+			}
+		}
+	}
+}

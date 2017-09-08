@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="ru">
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title></title>
+        <meta content="" name="description">
+        <meta content="" name="keywords">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <meta content="telephone=no" name="format-detection">
+        <!-- This make sence for mobile browsers. It means, that content has been optimized for mobile browsers -->
+        <meta name="HandheldFriendly" content="true">
+
+
+        <!--[if (gt IE 9)|!(IE)]><!-->
+        <link href="assets/css/main.min.css" rel="stylesheet" type="text/css">
+        <!--<![endif]-->
+
+
+        <link rel="icon" type="image/x-icon" href="favicon.ico">
+        <script>
+            (function(H){H.className=H.className.replace(/\bno-js\b/,'js')})(document.documentElement)
+        </script>
+
+    </head>
+
+    <body class="login">
+        <header>
+            <div class="container">
+                <div class="row-fluid flex flex-middle flex-wrap">
+                    <div class="span4 span6-xs center-xs">
+                        <a href="#" class="logo">
+                            <img src="assets/images/content/logo.png" alt="">
+                        </a>
+                    </div>
+                    <div class="span8 span12-xs">
+                        <div class="login-nav flex flex-flex-end flex-middle flex-wrap  flex-center-xs padding-xs">
+                            <div class="btn-group">
+                                <button class="btn btn-dark dropdown-toggle" data-toggle="dropdown">
+                                    <span class="icon-lang ru"></span> Русский <span class="caret"></span>
+                                </button>
+                                <ul class="dropdown-menu dropdown-lang pull-right">
+                                    <li><a href="#"><span class="icon-lang ru"></span>Русский</a>
+                                    </li>
+                                    <li><a href="#"><span class="icon-lang en"></span>English</a>
+                                    </li>
+                                    <li><a href="#"><span class="icon-lang cn"></span>Китайский</a>
+                                    </li>
+                                    <li><a href="#"><span class="icon-lang ar"></span>Арабский</a>
+                                    </li>
+                                    <li><a href="#"><span class="icon-lang kr"></span>Корейский</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <a href="#" class="btn text-uppercase"><strong>Вход</strong></a>
+                            <a href="#" class="link">Восстановление</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="container">
+            <div class="section-padding">
+                <div class="login-padding login-block content">
+                    <h2>Регистрация</h2>
+                    <p>Пожалуйста, обратите внимание, что если email или контактный номер введен при регистрации неправильно, то вам не удастся получить регистрационные данные</p>
+                    <ul class="login-tab-nav">
+                        <li class="active"><a href="#private" data-toggle="tab">Частное лицо</a>
+                        </li>
+                        <li><a href="#uredic" data-toggle="tab">Юридическое лицо</a>
+                        </li>
+                        <li><a href="#agent" data-toggle="tab">Для агентов</a>
+                        </li>
+                    </ul>
+                    <div class="tab-content">
+                        <div class="tab-pane in active" id="private">
+                            <h4>Укажите регистрационные данные</h4>
+                            <div class="row-fluid">
+                                <div class="span6">
+                                    <div class="form-group input-group input-require">
+                                        <input type="text" placeholder="Логин">
+                                    </div>
+                                    <div class="form-group input-group input-require">
+                                        <input type="text" placeholder="Email">
+                                    </div>
+                                </div>
+                                <div class="span6">
+                                    <div class="form-group">
+                                        <div class="sex-radio-holder">
+                                            <div class="sex-radio">
+                                                <input type="radio" name="sex" id="woman" checked>
+                                                <label for="woman">Женщина</label>
+                                            </div>
+                                            <div class="sex-radio">
+                                                <input type="radio" name="sex" id="man">
+                                                <label for="man">Мужчина</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group input-group input-require" data-tip="На ваш номер будет отправлена бесплатная смс для верификации">
+                                        <input type="text" id="phone" placeholder="(093) ___-____">
+                                    </div>
+                                </div>
+                            </div>
+                            <h4>Пожалуйста, укажите ваши имя и фамилию</h4>
+                            <div class="row-fluid">
+                                <div class="span6">
+                                    <div class="form-group input-group input-require">
+                                        <input type="text" placeholder="Имя">
+                                    </div>
+                                </div>
+                                <div class="span6">
+                                    <div class="form-group input-group input-require">
+                                        <input type="text" placeholder="Фамилия">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane" id="uredic">
+
+                            <h4>32133Укажите регистрационные данные</h4>
+                            <div class="row-fluid">
+                                <div class="span6">
+                                    <div class="form-group input-group input-require">
+                                        <input type="text" placeholder="Логин">
+                                    </div>
+                                    <div class="form-group input-group input-require">
+                                        <input type="text" placeholder="Email">
+                                    </div>
+                                </div>
+                                <div class="span6">
+                                    <div class="form-group input-group input-require" data-tip="На ваш номер будет отправлена бесплатная смс для верификации">
+                                        <input type="text" id="phone" placeholder="(093) ___-____">
+                                    </div>
+                                </div>
+                            </div>
+                            <h4>Пожалуйста, укажите ваши имя и фамилию</h4>
+                            <div class="row-fluid">
+                                <div class="span6">
+                                    <div class="form-group input-group input-require">
+                                        <input type="text" placeholder="Имя">
+                                    </div>
+                                </div>
+                                <div class="span6">
+                                    <div class="form-group input-group input-require">
+                                        <input type="text" placeholder="Фамилия">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane" id="agent">
+
+
+                            <h4>Пожалуйста, укажите ваши имя и фамилию</h4>
+                            <div class="row-fluid">
+                                <div class="span6">
+                                    <div class="form-group input-group input-require">
+                                        <input type="text" placeholder="Имя">
+                                    </div>
+                                </div>
+                                <div class="span6">
+                                    <div class="form-group input-group input-require">
+                                        <input type="text" placeholder="Фамилия">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-middle">
+                        <a href="#" class="reload"><span class="icon icon-loop2"></span></a>
+                        <span class="num">852296</span>
+                    </div>
+                    <div class="form-group input-group input-require">
+                        <input type="text" placeholder="Число с картинки">
+                    </div>
+                    <div class="padding-min">
+                        <div class="flex flex-space-between flex-wrap">
+                            <label class="checkbox">
+                                <input type="checkbox">*Я прочитал и принимаю Клиентское Соглашение - Правила и Условия.
+                            </label>
+                            <button class="btn text-uppercase"><strong>отправить</strong>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <div class="container">
+                <div class="section-padding">
+                    <div class="text-center">
+                        <p>Все права защищены. Копирование информации, представленной на сайте, разрешено с указанием ссылки на источник
+                            <br>&copy; 2013-2016 'FXFINPRO CAPITAL'</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+
+
+
+        <!-- Main scripts. You can replace it, but I recommend you to leave it here     -->
+        <script src="assets/js/main.min.js"></script>
+        <script>
+            jQuery(function($){
+                $("#phone").mask("(999) 999-9999");
+            });
+        </script>
+    </body>
+
+</html>

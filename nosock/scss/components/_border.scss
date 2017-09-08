@@ -1,0 +1,11 @@
+.border {
+	&--top {
+		border-top: 1px solid lighten($brand-color, 20%);
+	}
+	&--bottom {
+		border-bottom: 1px solid lighten($brand-color, 20%);
+		&--light {
+			border-bottom: 1px solid lighten($brand-color, 70%);
+		}
+	}
+}

@@ -1,0 +1,833 @@
+<!doctype html>
+<html lang="ru">
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>market_action page</title>
+        <meta content="" name="description">
+        <meta content="" name="keywords">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <meta content="telephone=no" name="format-detection">
+        <!-- This make sence for mobile browsers. It means, that content has been optimized for mobile browsers -->
+        <meta name="HandheldFriendly" content="true">
+
+
+        <!--[if (gt IE 9)|!(IE)]><!-->
+        <link href="assets/css/main.min.css" rel="stylesheet" type="text/css">
+        <!--<![endif]-->
+
+        <meta property="og:title" content="" />
+        <meta property="og:url" content="" />
+        <meta property="og:description" content="" />
+        <meta property="og:image" content="" />
+        <meta property="og:image:type" content="image/jpeg" />
+        <meta property="og:image:width" content="500" />
+        <meta property="og:image:height" content="300" />
+        <meta property="twitter:description" content="" />
+        <link rel="image_src" href="" />
+
+        <link rel="icon" type="image/x-icon" href="favicon.ico">
+        <script>
+            (function(H){H.className=H.className.replace(/\bno-js\b/,'js')})(document.documentElement)
+        </script>
+
+    </head>
+
+    <body class="page">
+
+
+
+        <div class="header-base"></div>
+        <header class="header" data-spy="affix" data-offset-top="180">
+            <div class="affix-none">
+                <div class="top-menu">
+                    <div class="container relative-xs">
+                        <div class="xs-block relative-xs">
+                            <a class="navbar-toggle first-bar" data-toggle="collapse" href="#mobMenu2">
+                                <span class="icon-bar"></span>  <span class="icon-bar"></span>  <span class="icon-bar"></span> 
+                            </a>
+                        </div>
+                        <div id="mobMenu2" class="mobCollapse firstCollapse collapse  pull-left top-menu">
+                            <ul class="top-menu-list">
+                                <li><a href="#">Вопросы и ответы (FAQ) </a>
+                                </li>
+                                <li><a href="#">Типы счетов</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="pull-right">
+                            <div class="btn-group">
+                                <button class="btn btn-dark dropdown-toggle" data-toggle="dropdown">
+                                    <span class="icon-lang ru"></span> Русский <span class="caret"></span>
+                                </button>
+                                <ul class="dropdown-menu dropdown-lang pull-right">
+                                    <li><a href="#"><span class="icon-lang ru"></span>Русский</a>
+                                    </li>
+                                    <li><a href="#"><span class="icon-lang en"></span>English</a>
+                                    </li>
+                                    <li><a href="#"><span class="icon-lang cn"></span>Китайский</a>
+                                    </li>
+                                    <li><a href="#"><span class="icon-lang ar"></span>Арабский</a>
+                                    </li>
+                                    <li><a href="#"><span class="icon-lang kr"></span>Корейский</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <a href="#"><span class="icon-lock"></span> Личный кабинет</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="navbar">
+                    <div class="row flex flex-middle flex-wrap affix-flex flex-sm flex-space-between">
+                        <div class="span3">
+                            <a href="#" class="logo">
+                                <img src="assets/images/content/logo.png" alt="">
+                            </a>
+                        </div>
+                        <div class="span4 affix-none  sm-none">
+                            <ul class="nav">
+                                <li><a href="#">Контакты</a>
+                                </li>
+                                <li><a href="#">Новости</a>
+                                </li>
+                                <li><a href="#">Демо конкурс</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="span5 relative affix-order1">
+                            <div class="navbar-info flex flex-middle flex-flex-end">
+
+                                <strong class="font-lg sm-none affix-none">+357 2526 2102</strong>
+                                <div class="search-group flex flex-middle affix-none">
+                                    <div id="searchCollapse" style="display: none;" class="search-body search">
+                                        <input type="text" name="search" placeholder="Поиск...">
+                                    </div>
+                                    <a id="searchBtn" href="#">
+                                        <span class="icon-search"></span>
+                                    </a>
+                                </div>
+                                <div class="mob-menu-btn">
+                                    <a class="navbar-toggle" data-toggle="collapse" href="#mobMenu">
+                                        <span class="icon-bar"></span>  <span class="icon-bar"></span>  <span class="icon-bar"></span> 
+                                    </a>
+                                </div>
+                                <div class="xs-none">
+                                    <a href="#" class="btn btn-uppercase"><strong>Открыть счет</strong></a>
+                                </div>
+                            </div>
+                            <div class="xs-none affix-none">
+                                <span class="header-warning">Вы рискуете своим капиталом. Вы можете потерять больше, чем вкладываете</span>
+                            </div>
+                        </div>
+                        <div class="span12">
+                            <div id="mobMenu" class="mobCollapse collapse">
+                                <ul class="header-menu">
+                                    <li class="dropdown">
+                                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">О компании <span class="icon icon-chevron-down"></span></a>
+                                        <div class="dropdown-menu dropdown-nav" role="menu" aria-labelledby="dLabel">
+                                            <div class="section-padding">
+                                                <div class="row-fluid">
+                                                    <div class="span4">
+                                                        <h4>Компания FXFINPRO Capital</h4>
+                                                        <ul>
+                                                            <li><a href="#">Информация о FXFINPRO Capital</a>
+                                                            </li>
+                                                            <li><a href="#">Продукты и услуги</a>
+                                                            </li>
+                                                            <li><a href="#">Карьера</a>
+                                                            </li>
+                                                            <li><a href="#">Новости компании</a>
+                                                            </li>
+                                                            <li><a href="#">Полезные статьи</a>
+                                                            </li>
+                                                            <li><a href="#">Контакты</a>
+                                                            </li>
+                                                            <li><a href="#">Ввод - вывод средств</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="span4">
+                                                        <h4>Регулирование и партнеры</h4>
+                                                        <ul>
+                                                            <li><a href="#">Регулирование</a>
+                                                            </li>
+                                                            <li><a href="#">Партнеры и консультанты</a>
+                                                            </li>
+                                                            <li><a href="#">Юридические документы</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="span4">
+                                                        <h4>Почему FXFINPRO Capital</h4>
+                                                        <ul>
+                                                            <li><a href="#">Наши преимущества</a>
+                                                            </li>
+                                                            <li><a href="#">Награды и Премии</a>
+                                                            </li>
+                                                            <li><a href="#">Регулируемый Европейский ECN/STP-брокер</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="dropdown">
+                                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Трейдинг <span class="icon icon-chevron-down"></span></a>
+                                        <div class="dropdown-menu dropdown-nav" role="menu" aria-labelledby="dLabel">
+                                            <div class="section-padding">
+                                                <div class="row-fluid">
+                                                    <div class="span4">
+                                                        <h4>Институциональным клиентам</h4>
+                                                        <ul>
+                                                            <li><a href="#">Профессиональный доступ к ликвидности</a>
+                                                            </li>
+                                                            <li><a href="#">Программный доступ и интеграция (API / FIX)</a>
+                                                            </li>
+                                                            <li><a href="#">Институциональным клиентам</a>
+                                                            </li>
+                                                            <li><a href="#">White Label</a>
+                                                            </li>
+                                                            <li><a href="#">Представляющий брокер</a>
+                                                            </li>
+                                                            <li><a href="#">Кастодиальный счёт Forex</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="span4">
+                                                        <h4>Рынки и тарифы</h4>
+                                                        <ul>
+                                                            <li><a href="#">Рынки FOREX и CFD</a>
+                                                            </li>
+                                                            <li><a href="#">Рынки фьючерсов и опционов</a>
+                                                            </li>
+                                                            <li><a href="#">Рынки акций и ETF</a>
+                                                            </li>
+                                                            <li><a href="#">CFD на акции</a>
+                                                            </li>
+                                                            <li><a href="#">Опционы на акции и индексы</a>
+                                                            </li>
+                                                            <li><a href="#">Рынок облигаций</a>
+                                                            </li>
+                                                        </ul>
+
+                                                    </div>
+                                                    <div class="span4">
+                                                        <h4>Торговые платформы</h4>
+                                                        <ul>
+                                                            <li><a href="#">FXFIN Protrader 3</a>
+                                                            </li>
+                                                            <li><a href="#">FXFINPRO Metatrader 4</a>
+                                                            </li>
+                                                            <li><a href="#">FXFINPRO Trader Workstation</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="dropdown">
+                                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">ПАММ счета <span class="icon icon-chevron-down"></span></a>
+                                        <div class="dropdown-menu dropdown-nav dropdown-center" role="menu" aria-labelledby="dLabel">
+                                            <div class="padding-sm">
+                                                <div class="row-fluid flex flex-center text-center flex-wrap">
+                                                    <div class="span4">
+                                                        <ul>
+                                                            <li><a href="#">ПАММ управляющий</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="span4">
+                                                        <ul>
+
+                                                            <li><a href="#">Инвестировать в ПАММ</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="dropdown">
+                                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Рынки и инфо <span class="icon icon-chevron-down"></span></a>
+                                        <div class="dropdown-menu dropdown-nav dropdown-center" role="menu" aria-labelledby="dLabel">
+                                            <div class="section-padding">
+                                                <div class="row-fluid">
+                                                    <div class="span4">
+                                                        <h4>Технический анализ</h4>
+                                                        <ul>
+                                                            <li><a href="#">Forex и CFD</a>
+                                                            </li>
+                                                            <li><a href="#">Товарные фьючерсы</a>
+                                                            </li>
+                                                            <li><a href="#">Фьючерсы на индексы</a>
+                                                            </li>
+                                                            <li><a href="#">Акции</a>
+                                                            </li>
+                                                        </ul>
+                                                        <h4>Фундаментальный анализ</h4>
+                                                        <ul>
+                                                            <li><a href="#">Forex и CFD</a>
+                                                            </li>
+                                                            <li><a href="#">Товарные фьючерсы</a>
+                                                            </li>
+                                                            <li><a href="#">Фьючерсы на индекс</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="span4">
+                                                        <h4>Прогнозы</h4>
+                                                        <ul>
+                                                            <li><a href="#">Прогнозы Форекс</a>
+                                                            </li>
+                                                            <li><a href="#">Прогнозы экспертов</a>
+                                                            </li>
+                                                            <li><a href="#">Прогноз по акциям</a>
+                                                            </li>
+                                                        </ul>
+
+                                                    </div>
+                                                    <div class="span4">
+                                                        <h4>Обзор рынков</h4>
+                                                        <ul>
+                                                            <li><a href="#">Экономический календарь</a>
+                                                            </li>
+                                                            <li><a href="#">Графики</a>
+                                                            </li>
+                                                            <li><a href="#">Конвертер валют</a>
+                                                            </li>
+                                                            <li><a href="#">Обмен валют</a>
+                                                            </li>
+                                                            <li><a href="#">Тарифы и комиссии</a>
+                                                            </li>
+                                                            <li><a href="#">Торговые сессии</a>
+                                                            </li>
+                                                            <li><a href="#">Валютная биржа</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="dropdown">
+                                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Обучение <span class="icon icon-chevron-down"></span></a>
+                                        <div class="dropdown-menu dropdown-nav dropdown-center" role="menu" aria-labelledby="dLabel">
+                                            <div class="section-padding">
+                                                <div class="row-fluid">
+                                                    <div class="span4">
+                                                        <h4>Популярно о рынках</h4>
+                                                        <ul>
+                                                            <li><a href="#">Популярно о рынках фьючерсов</a>
+                                                            </li>
+                                                            <li><a href="#">Популярно о рынках акций</a>
+                                                            </li>
+                                                            <li><a href="#">Популярно о рынках FOREX и CFD</a>
+                                                            </li>
+                                                            <li><a href="#">Анализ и аналитика рынка Форекс</a>
+                                                            </li>
+                                                            <li><a href="#">ECN Брокер</a>
+                                                            </li>
+                                                            <li><a href="#">Сегрегированные счета</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="span4">
+                                                        <h4>Основы торговли и управления инвестициями</h4>
+                                                        <ul>
+                                                            <li><a href="#">Трейдинг для начинающих</a>
+                                                            </li>
+                                                            <li><a href="#">Психология торговли и управление капиталом</a>
+                                                            </li>
+                                                            <li><a href="#">Торговые стратегии Форекс</a>
+                                                            </li>
+                                                            <li><a href="#">Дополнительный заработок</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="span4">
+                                                        <h4>Вспомогательные ресурсы</h4>
+                                                        <ul>
+                                                            <li><a href="#">Словарь биржевых терминов</a>
+                                                            </li>
+                                                            <li><a href="#">Полезные линки и загрузки</a>
+                                                            </li>
+                                                            <li><a href="#">Курсы и вебинары</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li><a href="#">Партнерские программы</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </header>
+        <div class="container">
+            <ul class="breadcrumbs">
+                <li><a href="#">Главная</a>
+                </li>
+                <li><span>​Опционы на акции и индексы</span>
+                </li>
+            </ul>
+        </div>
+        <div class="light-bg">
+            <div class="section-padding">
+                <div class="container">
+
+                    <div class="row flex flex-middle flex-wrap">
+                        <div class="span6 span12-sm">
+
+
+
+                            <h2>​Опционы на акции и индексы</h2>
+
+
+
+
+                        </div>
+
+
+                        <div class="span6 span12-sm">
+                            <ul id="vvodTab" class="nav nav-tab nav-tab-heading">
+
+                                <li class="active"><a href="#desc" data-toggle="tab">Описание</a>
+                                </li>
+
+                                <li class=""><a href="#conditions" data-toggle="tab">Условия</a>
+                                </li>
+
+                                <li class=""><a href="#rates" data-toggle="tab">тарифы</a>
+                                </li>
+
+                                <li class=""><a href="#quotes" data-toggle="tab">котировки</a>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+        <div class="container">
+            <div class="section-padding">
+                <div class="row">
+                    <div class="span9 span12-sm">
+                        <div class="main-block content">
+                            <div id="TabContent" class="tab-content">
+                                <div class="tab-pane in active" id="desc">
+                                    <p>Профессионалы из европейской брокерской компании FXFINPRO Capital работают в сфере финансовых рынках более 10 лет – мало кто специалистов знаком с рынками так же хорошо. Именно поэтому мы стараемся обеспечить наших
+                                        клиентов всем необходимым для проведения операций инвестиционного характера с максимальным учётом финансовых рисков.* Одним из эффективных инструментов, который мы предоставляем опытным участникам торгов, являются
+                                        опционы на индексы и акции.</p>
+                                    <h3>Что такое опционы</h3>
+                                    <p>В целом, опцион представляет собой контракт на право купить (колл-опцион) или продать (пут-опцион) некий актив или ценную бумагу по оговорённой цене в течение определённого времени. Подчеркнём, что сделка по купле-продаже
+                                        не обязательно должна состояться – причём, в современных реалиях именно так чаще всего и происходит: опционы давно стали инструментом для хеджирования или получения спекулятивной прибыли.</p>
+                                    <p>Первые опционы появились ещё в 17-м веке в Голландии, где фермеры таким образом старались защититься от убытков в случае неурожая – как ни странно, это были опционы на покупку и продажу тюльпанов. Сегодняшний рынок
+                                        – это десятки тысяч торгуемых ежедневно по всему миру контрактов на более чем 3 тысячи ценных бумаг.</p>
+                                    <p>Компания FXFINPRO Capital предлагает вам огромный выбор инструментов с таких крупных мировых бирж, как CBOE, ISE, NYSE, NASDAQ и многих других – с максимально выгодными комиссиями!</p>
+                                    <p>Вы сможете оперировать опционами на покупку и продажу не только акций, но и композитных индексов, а также многих ETF-фондов, торгуемых на бирже.</p>
+                                    <h3>Преимущества использования опционов</h3>
+                                    <p>Линейка финансовых продуктов компании FXFINPRO Capital включает в себя опционы на акции (Equity Options) и опционы на индексы (Index Options). Эти инструменты – при умелом использовании – открывают широчайшие возможности
+                                        как для трейдинга, так и для инвестирования. Вот лишь несколько областей применения опционов:</p>
+                                    <ul class="check-list">
+                                        <li>
+                                            <strong>Хеджирование портфеля</strong>
+                                            <p>Если вы купили акции определённых компаний, покупка пут-опционов на эти же акции защитит вас от убытков в случае разворота тренда или обвала рынка. Стоимость опционов может быть не слишком большой платой за
+                                                такую надёжную страховку.*</p>
+                                        </li>
+                                        <li>
+                                            <strong>Финансовый рычаг при ограниченном риске. </strong>
+                                            <p>Трейдеры и инвесторы не всегда хотят рисковать большими средствами – но если правильно угадать сильное движение рынка, то вы можете заработать на покупке опционов значительно больше, чем сумма вложенная в сделку,
+                                                при заранее ограниченном риске.*</p>
+                                        </li>
+                                        <li>
+                                            <strong>Открытие коротких позиций</strong>
+                                            <p>Не все акции можно «шортить», при этом очень часто возникают хорошие возможности сыграть на понижение. Покупка пут-опционов – отличный вариант для получения прибыли на медвежьем рынке.*</p>
+                                        </li>
+                                    </ul>
+                                    <p>FXFINPRO Capital предлагает своим клиентам возможность торговать опционами на сотни различных акций и ETF. Это отличный способ заработать на изменениях курсов акций, индексов – и даже волатильности рынков (VIX). Все
+                                        ваши сделки осуществляются при помощи современной онлайн-платформы, ордера на покупку и продажу опционов исполняются мгновенно.*</p>
+                                    <h3>Как это работает</h3>
+                                    <p>А сейчас давайте рассмотрим простой пример торговли на опционах. Допустим, вы хотите заработать на снижении цены на акции компании А, текущий курс которых – 50 долларов. Для покупки пакета в 100 акций вам понадобится
+                                        5 тысяч долларов – но можно купить колл-опционы, которые стоят в разы дешевле.</p>
+                                    <p>Один контракт как правило заключается на 100 акций, котировки контракта биржа дает в расчете на одну акцию. Предположим, что мы приобретаем 5 опционных контрактов (всего на 500 акций) по 1 доллару за акцию. «Страйк»
+                                        по опционам – цена исполнения – находится на уровне 52 доллара, а экспирация наступает, скажем, через 2 недели (как правило, срок истечения опционов – третья пятница каждого месяца). Если до срока истечения курс
+                                        акций компании А вырастет, например до 56 долларов, то стоимость опциона вырастет как минимум до 4 долларов за акцию, а если до истечения опциона остается время, то его стоимость будет еще выше. Тогда мы можем продать
+                                        его на рынке, зафиксировав прибыль (4-1)*500 = 1500 долларов.</p>
+                                    <p>Аналогичную прибыль мы получим, если мы исполним наши опционы и получим на торговый счет акции по заранее оговоренной цене, 52 за штуку. Продав эти акции на рынке по 56, мы получим доход 4 доллара за акцию, всего 2000
+                                        долларов. За вычетом первоначально потраченных на покупку опционов 500 долларов, наша прибыль составит 2000 – 500 = 1500 долларов.</p>
+                                    <p>Что же произойдёт в случае, если цена откажется расти и до истечения экспирации не возьмёт «страйк»? В самом худшем случае мы потеряем сумму, уплаченную за опционные контракты – 500 долларов. Заметим, что размер убытка
+                                        будет ограничен этой суммой, даже если акции компании А упадут до 0*.</p>
+                                    <p>Торговля опционами может быть не только потенциально высокодоходной (в зависимости от условий), но и представлять собой интересный бизнес. На этом рынке существуют сотни стратегий, которые могут помочь вам увеличить
+                                        свою прибыль от торговли на фондовых и фьючерсных рынках, защитить свои инвестиции от обвалов и кризисов, заработать на разворотных стратегиях и коротких позициях.* Со своей стороны компания FXFINPRO Capital готова
+                                        предоставить профессиональную поддержку, передовые торговые платформы – и лучшие условия для опционной торговли!</p>
+                                    <p>Внимание, так как цены опционов могут в течение короткого времени меняться в разы и даже в десятки раз, то эти инструменты несут значительный ценовой риск и другие виды затрат. Для успешной торговли опционами требуется
+                                        опыт в торговле на финансовых рынках и понимание этих инструментов и связанных с ними рисков.</p>
+                                </div>
+                                <div class="tab-pane" id="conditions">
+                                    <h3>Условия торговли</h3>
+                                    <p>Следующие вычисления применимы только к счетам типа: маржинальный (RegT) и наличный (Cash).</p>
+                                    <p>Информация ниже применима к опционам на акции и индексным опционам (торгуемым на опционных биржах). Информацию по опционам на фьючерсы пожалуйста смотрите на странице по фьючерам.</p>
+                                    <p>В США один опцион как правило заключается на 100 акций, котировки биржи дают в расчете на одну акцию.</p>
+                                    <p>FINRA и NYSE ввели правила, ограничивающие дневную торговлю малых инвесторов. На счета клиентов, которые были классифицированы данными организациями как "системные дневные трейдеры", накладываются Ограничения внутридневной
+                                        торговли для ценных бумаг США.</p>
+                                    <p>Пожалуйста, учитывайте, что мы не поддерживаем исполнения опционов, переуступки прав или поставки, в результате которых счет может перестать соответствовать маржинальным требованиям. Дополнительно к принудительной ликвидации
+                                        в случае превышения текущих маржинальных требований на Вашем счете, также могут быть сокращены позиции создающие риск в случае определенных связанных с экспирацией событий (например, если маржинальные требования
+                                        вероятно будут превышены при наступлении поставки).</p>
+                                    <p>В следующей таблице представлены маржинальные требования к опционам США, Канады и Австралии для разных типов стратегий.</p>
+                                    <p>Для опционов торгуемых в других странах, маржинальные требования устанавливаются на основе рисковых моделей анализа портфеля, которые определяются конкретными биржами. Маржинальные требования RegT США также применяются
+                                        в конце каждого торгового дня.</p>
+                                    <h3>Длинный колл или пут</h3>
+                                    <div class="table-responsive">
+                                        <table>
+                                            <tr>
+                                                <th>Маржинальный счет ( Reg T Margin)</th>
+                                                <th></th>
+                                            </tr>
+                                            <tr>
+                                                <td><strong>Начальная/RegT маржа в конце дня</strong>
+                                                </td>
+                                                <td>Нет. Стоимость опциона должна быть обеспечена полностью.</td>
+                                            </tr>
+                                            <tr>
+                                                <td><strong>Начальная/RegT маржа в конце дня</strong>
+                                                </td>
+                                                <td>Нет. Стоимость опциона должна быть обеспечена полностью.</td>
+                                            </tr>
+                                            <tr>
+                                                <td><strong>Наличный счет (Cash)</strong>
+                                                </td>
+                                                <td>Такая же, как и начальная.</td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                    <p>Минимальная плата составляет USD 2,50 за каждую акцию андерлаинга. Данный минимум не применяется при вычислении RegT маржи в конце дня.</p>
+                                    <p>Для опционов с кредитным плечом, Минимум (20% * Коэффициент левериджа, 100%).</p>
+                                    <p>Для опционов с кредитным плечом, Минимум (15% * Коэффициент левериджа, 100%)</p>
+                                    <p>Для покрытых корзинных коллов (короткий корзинный колл, акции длинного компонента) маржинальные требования распространяются на все акции-компоненты.</p>
+                                    <p>К некоторым опционам, схожим по динамике с биржевыми товарами (например, индексные опционы VIX), могут применяться особые правила спреда. Вследствие этого, маржинальные требования к ним могут быть выше, чем к простым
+                                        американским опционам на акции.</p>
+                                    <p>Маржинальные требования могут меняться без предварительного уведомления.</p>
+                                    <p>Клиентам настоятельно рекомендуется использовать тренировочный счет (papertradingaccount) для моделирования опционных спредов с целью проверки текущих маржинальных требований к подобным спредам.</p>
+                                </div>
+                                <div class="tab-pane" id="rates">
+                                    <p>Информация ниже применима к опционам на акции и индексным опционам (торгуемым на опционных биржах).</p>
+                                    <p>Информацию по опционам на фьючерсы пожалуйста смотрите на странице по фьючерам.</p>
+                                    <p>В США один опционный контракт как правило заключается на 100 акций.</p>
+                                    <p>Опционы на акции и индексные опционы - Северная Америка</p>
+                                    <h3><img src="assets/images/content/icon-usa.png" alt=""> США-Smart маршрутизация</h3>
+                                    <div class="table-responsive">
+                                        <table>
+                                            <tr>
+                                                <th>Название</th>
+                                                <th>Комиссии</th>
+                                                <th>Минимум за ордер</th>
+                                            </tr>
+                                            <tr>
+                                                <td><strong>Опционы с премией больше чем USD 0.10</strong>
+                                                </td>
+                                                <td>USD 1.40 за контракт</td>
+                                                <td>USD 2.00</td>
+                                            </tr>
+                                            <tr>
+                                                <td><strong>Опционы с премией больше чем USD 0.10</strong>
+                                                </td>
+                                                <td>USD 1.40 за контракт</td>
+                                                <td>USD 2.00</td>
+                                            </tr>
+                                            <tr>
+                                                <td><strong>Опционы с премией больше чем USD 0.10</strong>
+                                                </td>
+                                                <td>USD 1.40 за контракт</td>
+                                                <td>USD 2.00</td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                    <p>Smart маршрутизация между биржами применяется по умолчанию, если Вы не выберете какой-либо прямой маршрут самостоятельно.</p>
+                                </div>
+                                <div class="tab-pane" id="quotes">
+                                    <h3><img src="assets/images/content/icon-usa.png" alt=""> США - Рыночные данные</h3>
+                                    <div class="table-responsive">
+                                        <table>
+                                            <tr>
+                                                <td><strong>Регион/Биржа</strong>
+                                                </td>
+                                                <td>Плата/месяц для непрофессионалов</td>
+                                                <td>Плата/месяц для непрофессионалов</td>
+                                            </tr>
+                                            <tr>
+                                                <td><strong>US Securities and Futures Value Bundle 1, 2, 3, 4</strong>
+                                                </td>
+                                                <td>USD10,00 Активные счета освобождаются от оплаты</td>
+                                                <td>Нет</td>
+                                            </tr>
+                                            <tr>
+                                                <td><strong>US Securities and Futures Value PLUS Bundle </strong>
+                                                </td>
+                                                <td>USD5,00</td>
+                                                <td>Нет</td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                    <h3><img src="assets/images/content/icon-canada.png" alt=""> Канада - Рыночные данные</h3>
+                                    <div class="table-responsive">
+                                        <table>
+                                            <tr>
+                                                <td><strong>Регион/Биржа</strong>
+                                                </td>
+                                                <td>Плата/месяц для непрофессионалов</td>
+                                                <td>Плата/месяц для непрофессионалов</td>
+                                            </tr>
+                                            <tr>
+                                                <td><strong>US Securities and Futures Value Bundle 1, 2, 3, 4</strong>
+                                                </td>
+                                                <td>USD10,00 Активные счета освобождаются от оплаты</td>
+                                                <td>Нет</td>
+                                            </tr>
+                                            <tr>
+                                                <td><strong>US Securities and Futures Value PLUS Bundle </strong>
+                                                </td>
+                                                <td>USD5,00</td>
+                                                <td>Нет</td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                    <div class="span3 span12-sm">
+
+                        <div class="sidebar">
+                            <h5 class="text-uppercase">технический анализ</h5>
+                            <div class="sidebar-news">
+                                <a href="#" class="sidebar-news__item">
+                                    <strong>26.09.2016</strong>
+                                    <span>Валютная торговля и евро. Цена EUR/USD двигается в рамках диапазона 1,1200-1,1260.</span>
+                                </a>
+                                <a href="#" class="sidebar-news__item">
+                                    <strong>26.09.2016</strong>
+                                    <span>Валютная торговля и евро. Цена EUR/USD двигается в рамках диапазона 1,1200-1,1260.</span>
+                                </a>
+                                <a href="#" class="sidebar-news__item">
+                                    <strong>26.09.2016</strong>
+                                    <span>Валютная торговля и евро. Цена EUR/USD двигается в рамках диапазона 1,1200-1,1260.</span>
+                                </a>
+                                <div class="text-center">
+                                    <a href="#" class="btn btn-gray"><strong>Больше новостей</strong></a>
+                                </div>
+                            </div>
+                            <div class="padding-min">
+                                <h5 class="text-uppercase">информация</h5>
+                                <div class="sidebar-info">
+                                    <div class="sidebar-info__heading">
+                                        <h4>Технический анализ</h4>
+                                        <img src="assets/images/content/info01.png" alt="">
+                                    </div>
+                                    <div class="sidebar-info__content">
+                                        <p>Технический анализ Форекс и CFD представляет собой прогноз по наиболее популярным валютам и контрактам на разницу...</p>
+                                        <div class="text-center">
+                                            <a href="#" class="btn btn-blue text-uppercase"><strong>узнать больше</strong></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="main-bg">
+            <div class="container">
+                <div class="section-padding">
+                    <div class="row flex flex-center">
+                        <div class="span9">
+                            <div class="text-center">
+                                <p>Напоминаем вам, что, несмотря на то, что маржинальная торговля деривативами может принести прибыль, важно отметить, что она также несет в себе высокий уровень риска. Пожалуйста, внимательно прочитайте 'Уведомление об общих
+                                    рисках’ и ‘Уведомление о рисках Финансовых инструментов и Инвестиционных услуг’.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="footer">
+            <div class="light-footer">
+                <div class="container">
+                    <div class="footer-padding">
+                        <div class="row">
+                            <div class="span4">
+                                <h4>Главный офис</h4>
+                                <p>Cyprus, Limassol
+                                    <br>Nikou Pattichi 82, Maritania Court, 1 Floor, Office 101, Area Code 3070 Limassol, Cyprus
+                                </p>
+                                <strong>
+            							+357 2526 2102
+            						</strong>
+                            </div>
+                            <div class="span4">
+                                <h4>Демо-конкурс</h4>
+                                <p>Принимайте участие в конкурсе и получайте реальные денежные призы для торговли на валютном рынке Forex. Конкурс проводится на демо-счетах – участвуйте без риска потерять свои вложения!
+                                </p>
+                                <a href="#" class="text-uppercase">
+            							Подробнее <span class="icon icon-arrow-right"></span>
+            						</a>
+                            </div>
+                            <div class="span4">
+                                <h4>Подписка на новости</h4>
+                                <div class="form-group">
+                                    <input type="text" class="input" placeholder="Ваш email">
+                                    <button class="form-btn btn"><span class="icon icon-send"></span>
+                                    </button>
+                                </div>
+                                <p>Только полезная информация. Никакого спама.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="dark-footer">
+                <div class="container">
+                    <div class="footer-padding">
+                        <div class="flex flex-space-between flex-wrap">
+                            <div class="info-list">
+                                <h4>О компании</h4>
+                                <ul>
+                                    <li><a href="#">Профиль компании</a>
+                                    </li>
+                                    <li><a href="#">Партнерские программы</a>
+                                    </li>
+                                    <li><a href="#">Вопросы и ответы (FAQ)</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="info-list">
+                                <h4>Трейдинг</h4>
+                                <ul>
+                                    <li><a href="#">Опытным трейдерам</a>
+                                    </li>
+                                    <li><a href="#">Сервисы трейдерам</a>
+                                    </li>
+                                    <li><a href="#">Рынки и тарифы</a>
+                                    </li>
+                                    <li><a href="#">Торговые платформы</a>
+                                    </li>
+                                    <li><a href="#">Институциональным клиентам</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="info-list">
+                                <h4>Инвестиции</h4>
+                                <ul>
+                                    <li><a href="#">Сервисы инвесторам</a>
+                                    </li>
+                                    <li><a href="#">Управление инвестиционным портфелем</a>
+                                    </li>
+                                    <li><a href="#">Инвестиционные продукты</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="info-list">
+                                <h4>Рынок инфо</h4>
+                                <ul>
+                                    <li><a href="#">Технический анализ</a>
+                                    </li>
+                                    <li><a href="#">Фундаментальный анализ</a>
+                                    </li>
+                                    <li><a href="#">Прогнозы</a>
+                                    </li>
+                                    <li><a href="#">Обзор рынков</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="container">
+                    <div class="footer-padding">
+                        <div class="row">
+                            <div class="span6">
+                                <h4>Предупреждение о рисках</h4>
+                                <p>Торговля сложными финансовыми инструментами, такими как Акции, Фьючерсы, Валютные пары ('Forex'), Контракты на разницу ('CFD'), Индексы, Опционы и иными производными финансовыми инструментами, несет высокий уровень риска
+                                    и не всегда подходит тому или иному инвестору. Высокий уровень кредитного плеча может работать как на Вас, так и против Вас. Перед началом торговли на любом из этих рынков вы должны внимательно изучить ваши инвестиционные
+                                    цели, уровень опыта и отношение к риску. Существует вероятность, что вы можете понести частичную или полную потерю ваших начальных инвестиций, таким образом, вы не должны инвестировать средства, которые вы не можете
+                                    позволить себе потерять. Вы должны быть в курсе всех рисков, связанных с этими финансовыми рынками, и обратиться за советом к независимому финансовому эксперту, в случае, если у Вас есть какие-либо вопросы или сомнения.
+                                    Пожалуйста, внимательно прочитайте 'Уведомление об общих рисках' и 'Уведомление о рисках Финансовых инструментов и Инвестиционных услуг'</p>
+                            </div>
+                            <div class="span6">
+                                <h4>Правовая информация</h4>
+                                <p>Домен 'fxfinpro.com' принадлежит кипрской инвестиционной компании 'PFX Financial Professionals Limited', зарегистрированной в Реестре Компаний Кипра в Никосии под номером HE 237840. Офис компании расположен по адресу 82
+                                    Nikou and Despina Pattichi Avenue, Maritania Court, Office 101, Kato Polemedia, 3070 Limassol, Cyprus. 'PFX Financial Professionals Limited' регулируется Кипрской комиссией по ценным бумагам и биржам ('CySEC') под регистрационным
+                                    номером 193/13. 'PFX Financial Professionals Limited' осуществляет свою деятельность в соответствии с Директивой Европейского союза 'О рынках финансовых инструментов' ('MiFID')</p>
+                                <h4>Региональные ограничения</h4>
+                                <p>'PFX Financial Professionals Limited' не предоставляет услуги гражданам США, Японии, Бельгии, Северной Кореей и Ирана</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="container light-text">
+                    <div class="footer-padding">
+                        <h4>Оставайтесь на связи</h4>
+                        <div class="row ">
+                            <div class="span4 span6-sm">
+                                <ul class="social-list">
+                                    <li><a href="#"><span class="icon icon-facebook"></span></a>
+                                    </li>
+                                    <li><a href="#"><span class="icon icon-twitter"></span></a>
+                                    </li>
+                                    <li><a href="#"><span class="icon icon-instagram"></span></a>
+                                    </li>
+                                    <li><a href="#"><span class="icon icon-vk"></span></a>
+                                    </li>
+                                    <li><a href="#"><span class="icon icon-youtube"></span></a>
+                                    </li>
+                                    <li><a href="#"><span class="icon icon-linkedin2"></span></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="span8 span6-sm">
+                                <div class="padding-sm">Все права защищены. Копирование информации, представленной на сайте, разрешено с указанием ссылки на источник. &copy; 2013-2016 'FXFINPRO CAPITAL'</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+
+
+
+        <!-- Main scripts. You can replace it, but I recommend you to leave it here     -->
+        <script src="assets/js/main.min.js"></script>
+    </body>
+
+</html>

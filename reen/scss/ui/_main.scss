@@ -1,0 +1,73 @@
+
+
+// modify for owl carousel big  
+.center {
+	text-align: center;
+	&--padding-bottom {
+		padding-bottom: $center-padding-bottom;
+	}
+}
+.right {
+	text-align: right;
+	margin-left: $block-margin-owl;
+	@media  (max-width: $screen-sm-max) {
+		margin-left: 0;
+	}
+}
+.left {
+	text-align: left;
+	margin-right: $block-margin-owl;
+	@media  (max-width: $screen-sm-max) {
+		margin-right:0;
+	}
+}
+.light-text {
+	p {
+		color: $base-color-the-lightest;
+	}
+	.dark-bg {
+		margin: 5px 0;
+	}
+}
+.dark-bg {
+	background-color: $dark-brand-color;
+	display: inline-block;
+	padding: 10px;
+}
+.dark-text {
+	.dark-bg {
+		margin: 5px 0;
+	}
+	p {
+		color: $dark-brand-color;
+	}
+}
+.box {
+	padding: $box-padding;
+	.box-content {
+		margin: 0 150px 70px;
+		@media  (max-width: $screen-sm-max) {
+			margin: 0;
+			margin-bottom:70px;
+		}
+	}
+}
+.block {
+	color: $main-brand-color;
+	padding: $block-padding;
+	.icon {
+		width: 6em;
+		height: 6em;
+	}
+	.svg {
+		position: absolute;
+		left: 0;
+		top: 0;
+	}
+	p {
+		font-size: 16px;
+	}
+}
+.grey {
+	background-color: $base-color-light;
+}

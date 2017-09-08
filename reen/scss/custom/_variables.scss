@@ -1,0 +1,80 @@
+// Colors 
+$main-brand-color: #00bc9c;
+$dark-brand-color: #506a85;
+$daren-brand-color:  #73879c;
+$base-color-the-lightest: #fff;
+$base-color-no-light: #a3b1bf;
+$base-color-lighten: #f5f7fa; // nav
+$base-color-light: #f2f5f7; // section
+$base-color-dark: #2f4052;
+$base-color-darker: #283645;
+
+$navbar-default-link-color: $dark-brand-color;
+$navbar-default-link-hover-color: $main-brand-color;
+$navbar-default-link-active-color: $main-brand-color;
+$navbar-default-link-disabled-bg: transparent;
+$navbar-default-link-active-bg: transparent;
+$navbar-default-bg: $base-color-the-lightest;
+$navbar-default-border: transparent; // pre-nav-social-link-hover
+
+$facebook-bg: #4668b3;
+$google-plus-bg: #de5745;
+$twitter-bg: #2fbbed;
+$pinterest-bg: #d94348;
+$behance-bg: #3079ff;
+$dribbble-bg: #eb6397;
+
+$border-nav-link-color: #e6e9ed;
+$nav-dropdown-link-color: $daren-brand-color;
+
+$bg-input: #596675;
+$input-color-placeholder: $dark-brand-color;
+
+// fonts 
+
+$content-font: 'Source Sans Pro', sans-serif;
+$heading-font: 'Lato', sans-serif;
+$content-font-weight: 400; 
+$link-font-weight: 700; 
+
+$lato-bold-weight: 700;
+$lato-bolder-weight: 900;
+$link-transform: uppercase;
+// other 
+
+$navbar-brand-height: auto;
+
+
+// paddings 
+$pre-nav-link-padding: 10px 15px;
+$pre-nav-social-padding: 5px;
+$header-nav-padding: 10px 10px;
+$header-navbar-padding: 15px 25px 0;
+$header-navbar-padding-sticky: 10px 25px 0;
+$search-margin: 20px 20px 0;
+$search-margin-vertical: 20px;
+$navbar-brand-padding: 15px 15px 0;
+$dropdown-padding: 1px 0 0;
+$dropdown-link-padding:8px 15px;
+$dropdown-menu-big-padding: 25px 0;
+$form-group-margin-bottom: 0;
+$owl-heading-margin: 20px 0;
+$block-margin-owl: 300px;
+$block-padding: 0 0 0 100px;
+$box-padding: 40px 0 80px;
+$thumbnail-padding: 0;
+
+$center-padding-bottom: 40px;
+
+// borders 
+
+$border-nav-link: 1px solid transparent;
+$border-nav-link-hover: 1px solid $border-nav-link-color;
+$border-radius-nav-link: 3px;
+$pre-nav-border-bottom: 1px solid #e6e9ed;
+$border-radius-input: 3px;
+
+// btn 
+$btn-brand-color: #fff;
+$btn-brand-bg: #00bc9c;
+$btn-brand-border: #148e76;

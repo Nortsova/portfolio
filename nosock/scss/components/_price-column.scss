@@ -1,0 +1,32 @@
+.price-column {
+	@include clearfix;
+	font-size: 14px;
+	&--right {
+		text-align: right;
+	}
+	&__heading {
+		display: none;
+	}
+	&__title {
+		font-family: $headings-font-family;
+		font-weight: $headings-font-weight;
+		font-size: 18px;
+	}
+	@include sm-up {
+
+	font-size: 24px;
+		&__name {
+			float: left;
+		}
+		&__input {
+			float: left;
+		}
+		&__heading {
+			display: block;
+			text-transform: uppercase;
+		}
+	}
+	@include md-up {
+		margin: 5% 0;
+	}
+}

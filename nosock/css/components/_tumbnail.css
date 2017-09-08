@@ -1,0 +1,23 @@
+.thumbnail {
+  display: block;
+}
+
+.thumbnail__img img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.thumbnail__title {
+  font-size: 22px;
+}
+
+.thumbnail__description {
+  font-size: 12px;
+}
+
+.thumbnail__wish {
+  position: absolute;
+  left: 0;
+  top: 0;
+}

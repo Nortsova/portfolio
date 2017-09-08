@@ -1,0 +1,210 @@
+
+
+@import 'custom/_variables.scss';
+@import '_bootstrap.scss';
+@import 'custom/_buttons.scss';
+@import 'custom/_social-icons.scss';
+
+@import 'ui/_header.scss';
+@import 'ui/_owl-carousel.scss';
+@import 'ui/_main.scss';
+@import 'ui/_footer.scss';
+
+// ---------- Styles -------------
+
+// ---- header nav 
+
+// -- pre nav 
+svg {
+	fill:currentColor;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-family: $heading-font;
+	font-weight: $lato-bold-weight;
+	color: $dark-brand-color;
+}
+h3 {
+	font-size: 26px;
+}
+p {
+	font-family: $content-font;
+	font-weight: $content-font-weight;
+	font-size: 22px;
+	color: $daren-brand-color;
+}
+.icon {
+	display: inline-block;
+	width: 1em;
+	height: 1em;
+}
+// ховерное состояние картинки
+.hover .glyphicon {
+	position: absolute;
+	display: block;
+	margin: auto;
+	right: 0;
+	left: 0;
+	top: 45%; 
+	bottom: 45%;
+	color: $navbar-default-bg;
+	text-align: center;
+	font-size: 18px;
+}
+.green-hover {
+	overflow: hidden;
+	position: relative;
+	display: inline-block;
+	cursor: pointer;
+	.hover {
+		transform: translateY(-200px);
+		transition: transform 0.5s ease-in;
+		width: 100%;
+		height: 100%;
+		background-color: $main-brand-color;
+		opacity: 0.9;
+		position: absolute;
+		left: 0;
+		right: 0;
+		top: 0;
+		bottom: 0;		
+		color: $navbar-default-bg;
+		text-align: center;
+		h1, h2, h3, h4, h5, h6, p {
+			color: $base-color-the-lightest;
+		}
+		.text {
+			padding: 15% 0;
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			left: 0;
+			right: 0;
+		}
+	}
+	&:hover .hover {
+		transform: translateY(0);	
+		transition: transform 0.7s cubic-bezier(.1, .9, .9, 2);
+	}
+	.img {
+		width: 100%;
+		position: relative;
+		img {
+			width: 100%;
+		}
+	}
+}
+.green-hover.thumbnail {
+	width: 100%;
+	.hover {
+		transform: translateY(500px);
+	}
+	&:hover .hover {
+		transform: translateY(0);	
+		transition: transform 0.7s cubic-bezier(.1, .9, .9, 2);
+	}
+	.text {
+		position: relative;
+		padding: 20px 0;
+		z-index: 10;
+		text-align: center;
+		background-color: $base-color-the-lightest;
+		h1, h2, h3, h4, h5, h6, p {
+			margin: 0;
+		}
+	}
+	&:hover .text {
+		h1, h2, h3, h4, h5, h6 {
+			color: $main-brand-color;
+		}
+	}
+}
+
+
+@media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+	.navbar-header {
+		text-align: center;
+		float: none;
+		display: block;
+		margin: 0 auto;
+	}
+	.navbar-brand {
+		text-align: center;
+		float: none;
+		display: inline-block;
+	}
+	.second-header .navbar-right {
+		float: none!important;
+		margin-right: -15px;
+		position: absolute;
+		bottom: 40%;
+		right: 20px;
+	}
+	.second {
+		.customNavigation {
+			.prev-second {
+				margin-right: 100px;
+			}
+			.next-second {
+				margin-left: 100px;
+			}
+		}
+	}
+}
+@media (max-width: $screen-sm-max) {
+	.latest-work {
+		display: none;
+	}
+}
+@media (min-width: $screen-md-min) and (max-width: $screen-md-max) {
+	
+	.second-header .navbar-right {
+		float: left !important;
+		.search {
+			margin: $search-margin-vertical 0 0; 
+			input {
+				padding: 0 0 0 40px;
+				width: 150px;
+				&.dropdown-menu {
+					right: auto;
+					left: -20%;
+				}
+			}
+		}
+	}
+	.is-sticky {
+		.second-header .navbar-right {
+			.search {
+				margin: 12px 0 0; 
+			}
+		}
+	}
+}
+@media (max-width: $screen-xs-max) {
+	.navbar-nav.main-nav { 
+		> li{
+			 &.dropdown{
+				&:active, 
+				&:focus, 
+				&.active, 
+				&.open {
+					a {
+						border-color: $border-nav-link-color;
+					}
+					> .dropdown-menu {
+						display: none;
+					}
+				}
+			}
+		}
+	}
+	.second {
+		.customNavigation {
+			.prev-second {
+				margin-right: 150px;
+			}
+			.next-second {
+				margin-left: 150px;
+			}
+		}
+	}
+}

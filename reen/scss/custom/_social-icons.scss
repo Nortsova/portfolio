@@ -1,0 +1,67 @@
+
+.social-icons {
+	> li {
+
+		> a {
+			
+			padding: $pre-nav-social-padding;
+			position: relative;
+			display: block;
+			width: 30px;
+			height: 40px;
+			svg {
+				position: absolute;
+				left: 0;
+				top: 0;
+				right: 0;
+				bottom: 0;
+				display: table;
+				margin: auto;
+			}
+		}
+		&:hover,
+		&.active {
+			a {
+				color: $base-color-the-lightest;
+				&:hover, &:active, &:focus {
+					color: $base-color-the-lightest;
+				}
+			}
+		}
+		&.icon-facebook:hover,
+		&.icon-facebook.active {
+			background-color: $facebook-bg;
+		}
+		&.icon-google-plus:hover,
+		&.icon-google-plus.active {
+			background-color: $google-plus-bg;
+		}
+		&.icon-twitter:hover,
+		&.icon-twitter.active {
+			background-color: $twitter-bg;
+		}
+		&.icon-pinterest:hover,
+		&.icon-pinterest.active {
+			background-color: $pinterest-bg;
+		}
+		&.icon-behance:hover,
+		&.icon-behance.active {
+			background-color: $behance-bg;
+		}
+		&.icon-dribbble:hover,
+		&.icon-dribbble.active {
+			background-color: $dribbble-bg;
+		}
+	}
+	.active > a {
+			&,
+			&:hover,
+			&:focus {
+				color: $base-color-the-lightest;
+			}
+	}
+	.icons {
+		transition: background-color .4s ease-out;
+	}
+	
+}

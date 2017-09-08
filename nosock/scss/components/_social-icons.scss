@@ -1,0 +1,20 @@
+.social-icons {
+	@include clearul;
+	@include clearfix;
+	text-align: center;
+	&__item {
+		display: inline-block;
+		padding: 0 10px;
+		a {
+			color: $brand-inverse-color;
+			&:hover, &:focus {
+				color: transparentize($brand-inverse-color, .3);
+				text-decoration: none;
+			}
+		}
+	}
+	.icon {
+		width: 2em;
+		height: 2em;
+	}
+}

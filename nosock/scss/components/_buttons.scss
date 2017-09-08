@@ -1,0 +1,31 @@
+.btn {
+	display: block;
+	width: 100%;
+	border: none;
+	text-align: center;
+	background-color: $brand-color;
+	color: $brand-inverse-color;
+	text-transform: uppercase;
+	font-style: $headings-font-family;
+	font-weight: $headings-font-weight;
+	font-size: 19px;
+	padding: 15px 0;
+	color: $brand-inverse-color;
+	margin-bottom: 10px;
+	&--add-cart {
+		text-transform: none;
+		display: none;
+	}
+	&:hover, &:focus {
+		color: $brand-inverse-color;
+		text-decoration: none;
+		background-color: lighten($brand-color, 8%);
+	}
+	@include sm-up {
+		max-width: 260px;
+		&--add-cart {
+			display: block;
+		}
+	}
+
+}

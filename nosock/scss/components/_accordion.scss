@@ -1,0 +1,49 @@
+.accordion {
+	margin-left:  ceil(($grid-gutter-width / -2));
+	margin-right: floor(($grid-gutter-width / -2));
+	&__header {
+		background-color: darken($brand-inverse-color, 10%);
+		width: 100%;
+		display: block;
+		color: $brand-color;
+		padding: 15px 20px;
+		font-family: $headings-font-family;
+		font-weight: $headings-font-weight;
+		font-size: 16px;
+		position: relative;
+		border-bottom: 1px solid lighten($brand-color, 30%);
+		&:hover, &:focus {
+			text-decoration: none;
+			color: $brand-color;
+		}
+		&.collapsed {
+			.icon-arrow {
+				transform: rotate(180deg);
+			}
+		}
+	}
+	@include sm-up {
+		margin: 0;
+		&__header {
+			background-color: transparent;
+			border-bottom: none;
+			text-align: center;
+			margin-bottom: 30px;
+		}
+		.collapse {
+			display: block;
+		}
+		.icon-arrow {
+			display: none;
+		}
+	}
+}
+.icon-arrow {
+	position: absolute;
+	right: 3%;
+	font-size: 10px;
+	line-height: 2 !important;
+	&:after {
+			content: "\e900";
+		}
+}

@@ -1,0 +1,15 @@
+.heading {
+	text-align: center;
+	padding: 10px 0;
+	&--bg-grey {
+		background-color: darken($brand-inverse-color, 10%);
+	}
+	svg {
+		margin-right: 20px;
+	}
+	@include sm-up {
+		&--bg-grey {
+			background-color: transparent;
+		}
+	}
+}

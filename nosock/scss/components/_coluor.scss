@@ -1,0 +1,48 @@
+.coluor {
+	@include clearfix;
+	width: 80%;
+	margin: 0 auto;
+	padding-bottom: 20px;
+	&__title {
+		float: left;
+		line-height: 40px;
+	}
+	&__list {
+		float: right;
+		@include clearfix;
+		@include clearul;
+	}
+	&__item {
+		float: left;
+		padding: 0 5px;
+		span {
+			display: block;
+			width: 40px;
+			height: 40px;
+
+			border: 1px solid transparent;
+			&:hover {
+				border-color: $brand-color;
+			}
+			&.yellow {
+				background-color: $yellow-color;
+			}
+			&.pink {
+				background-color: $pink-color;
+			}
+			&.blue {
+				background-color: $blue-color;
+			}
+		}
+	}
+	@include sm-up {
+		width: 100%;
+	}
+	@include md-up {
+		width: 70%;
+		margin: 0 30% 0 0;
+	}
+}
+.quantity {
+	@extend .coluor;
+}

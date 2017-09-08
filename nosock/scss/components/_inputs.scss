@@ -1,0 +1,60 @@
+.input {
+	color: $brand-color;
+	position: relative;
+	@include clearfix;
+	input {
+		background-color: transparent;
+		border: none;
+		width: 100%;
+		padding: 5px 20px 15px;
+		border-bottom: 1px solid transparentize($brand-color, .8);
+		&:focus {
+			outline: none;
+			border-bottom: 1px solid transparentize($brand-color, .6);
+		}
+	}
+	&--inverse {
+		color: $brand-inverse-color;
+		input {
+			border-bottom: 1px solid transparentize($brand-inverse-color, .2);
+		}
+	}
+	&--footer {
+		display: inline-block;
+		width: 220px;
+		border-bottom: 1px solid transparentize($brand-inverse-color, .4);
+		input {
+			padding: 0 5px 5px;
+		}
+	}
+	&__title {
+		display: block;
+		float: left;
+		padding: 0 5px;
+	}
+	&__code {
+		border: 1px solid $brand-color;
+		&--mini {
+			width: 25%;
+			float: left;
+		}
+		input {
+			padding: 5px;
+		}
+	}
+	.icon {
+		position: absolute;
+		right: 0;
+		top: 30%;
+	}
+	@include sm-up {
+		input {
+			padding: 5px;
+			border-bottom: 1px solid transparentize($brand-color, .45);
+			&:focus {
+
+			border-bottom: 1px solid $brand-color;
+			}
+		}
+	}
+}

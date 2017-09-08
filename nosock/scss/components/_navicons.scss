@@ -1,0 +1,22 @@
+.navicons {
+	@include clearfix;
+	@include clearul;
+	position: absolute;
+	right: 0;
+	top: 20px;
+	li {
+		float: left;
+		padding: 0 7px;
+		a {
+			color: $brand-second-color;
+			&:hover, &:focus {
+				text-decoration: none;
+				color: transparentize($brand-second-color, .3);
+			}
+		}
+	}
+	@media (min-width: $grid-float-breakpoint) {
+		position: static;
+		float: right;
+	}
+}

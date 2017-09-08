@@ -1,0 +1,6 @@
+.block {
+	padding: 20px 0;
+	&--row {
+		padding: 20px ($grid-gutter-width/2);
+	}
+}

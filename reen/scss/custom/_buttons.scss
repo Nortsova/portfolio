@@ -1,0 +1,11 @@
+.btn {
+	font-family: $content-font;
+	font-weight: $btn-font-weight;
+	border: 0px solid transparent;
+	border-bottom: 2px solid transparent;
+	border-radius: 3px;
+	text-transform: uppercase;
+}
+.btn-brand {
+	@include button-variant($btn-brand-color, $btn-brand-bg, $btn-brand-border);
+}

@@ -1,0 +1,155 @@
+.header {
+	background-color: transparentize($brand-color, .3);
+	background-image: url("../images/bg-header.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 0 0;
+	overflow: hidden;
+	font-family: $brand-font-family;
+	font-size: $brand-font-size;
+	padding: 30px 0;
+	@media (min-width: $grid-float-breakpoint) {
+		padding: 0;
+		padding-top: 60px;
+	}
+}
+.brand {
+	float: left;
+}
+.nav {
+	float: right;
+
+	ul {
+		color: $brand-light;
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		float: right;
+		margin-bottom: 40px;
+		li {
+			float: left;
+		}
+		&:after {
+			content: "";
+			clear: both;
+			display: block;
+		}
+	}
+	a {
+		color: $brand-light;
+		outline: none;
+		&:hover, &:active, &:focus {
+		}
+	}
+}
+.first-nav {
+	border-bottom: 1px solid transparentize($brand-lightest, .5);
+	li {
+		padding: 0 0 5px 50px;
+	}
+}
+.second-nav {
+	li {
+		padding: 0 0 5px 30px;
+		position: relative;
+	}
+	input {
+		background-color: transparent;
+		border: none;
+		position: relative;
+		z-index: 3;
+		cursor: pointer;
+		padding: 5px 40px 0 0;
+		border-bottom: 2px solid transparentize($brand-lightest, .5);
+		&:focus {
+			outline: none;
+		}
+	}
+	svg {
+		color: $brand-lightest;
+		position: absolute;
+		right: 0;
+		top: 0;
+		z-index: 1;
+		height: 1.4em;
+		width: 1.4em;
+	}
+	span {
+		font-size: 16px;
+	}
+}
+
+@media  (max-width: $screen-xs-max) {
+	
+	.second-nav {
+		position: relative;
+		li:last-child {
+			display: block;
+			top: 100%;
+			padding: 5px 0 0;
+			input {
+				width: 100%;
+			}
+		}
+	}
+	.nav {
+		text-align: center;
+		float: none;
+		ul {
+			float: none;
+			text-align: center;
+			li {
+				float: none;
+				display: inline-block;
+			}
+		}
+	}
+}
+.nav-holder {
+	overflow: hidden;
+	padding: 0 0 15px;
+	@media (min-width: $grid-float-breakpoint) {
+		float: left;
+		padding: 0;
+	}
+}
+.navbar-collapse {
+	display:none;
+	@media (min-width: $grid-float-breakpoint) {
+		display: block;
+	}
+}
+
+.navbar-toggle {
+  position: relative;
+  float: right;
+  margin-right: $navbar-padding-horizontal;
+  padding: 15px 10px;
+  @include navbar-vertical-align(34px);
+  background-color: transparent;
+  background-image: none; // Reset unusual Firefox-on-Android default style; see https://github.com/necolas/normalize.css/issues/214
+  border: 1px solid transparent;
+  border-radius: $border-radius-base;
+
+  // We remove the `outline` here, but later compensate by attaching `:hover`
+  // styles to `:focus`.
+  &:focus {
+    outline: 0;
+  }
+
+  // Bars
+  .icon-bar {
+    display: block;
+    width: 65px;
+    height: 7px;
+    border-radius: 1px;
+    background-color: $brand-color;
+  }
+  .icon-bar + .icon-bar {
+    margin-top: 12px;
+  }
+
+  @media (min-width: $grid-float-breakpoint) {
+    display: none;
+  }
+}

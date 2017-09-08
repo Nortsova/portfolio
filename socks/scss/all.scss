@@ -1,0 +1,28 @@
+
+@import "custom/_fonts.scss";
+@import "custom/_variables.scss";
+@import "_bootstrap.scss";
+@import "ui/_header.scss";
+@import "ui/_main.scss";
+@import "ui/_footer.scss";
+
+// $dev: true !default;
+
+// @if $dev {
+// 	[class*="col-"] {
+// 		background-color: rgba(tomato, .5);
+// 		outline: 1px solid green;
+// 	}
+// }
+
+// img {
+// 	max-width: 100%;
+// 	height: auto;
+// }
+
+svg {
+	fill: currentColor;
+}
+body {
+	font-family: $brand-font-family;
+}

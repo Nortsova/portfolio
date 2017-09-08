@@ -1,0 +1,14 @@
+.price {
+	font-family: $headings-font-family;
+	font-weight: $headings-font-weight;
+	display: inline-block;
+	&--absolute {
+		position: absolute;
+		left: 0;
+		top: 50%;
+	}
+	&--vertical {
+		transform: rotate(-90deg);
+		transform-origin: 0 0;
+	}
+}
