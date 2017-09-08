@@ -27,7 +27,7 @@ class ShoppingStorage {
 			});
 		}
 
-		if (location.pathname == '/shopping-bag.html') {
+		if (/shopping-bag.html/.test(location.pathname)) {
 			this.updateTotalPriceBagPage();
 			this.renderElementsByData();
 		} else {
