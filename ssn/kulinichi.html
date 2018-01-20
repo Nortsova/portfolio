@@ -15,7 +15,7 @@
 
 
         <!--[if (gt IE 9)|!(IE)]><!-->
-        <link href="assets/css/maincj6obx9lyj3jgzxgvi.min.css" rel="stylesheet" type="text/css">
+        <link href="assets/css/main.min.css" rel="stylesheet" type="text/css">
         <!--<![endif]-->
 
 
@@ -127,7 +127,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-sm-8 col-sm-offset-1">
-                            <h3>Кулиничи</h3>
+                            <h2>Кулиничи</h2>
                             <h4>
                 Редизайн фирменного стиля
                 </h4>
@@ -136,6 +136,16 @@
                             <p>Кулиничи – компания с 25-летней историей, сложившимся образом и традициями. Это – миллионы потребителей каждый день. Поэтому изменения, над которыми нам предстояло работать, должны были быть аккуратными и деликатными с одной
                                 стороны, но решительными – с другой.</p>
                             <p>Проект предполагал редизайн всех элементов, с которыми взаимодействует потребитель, посещая торговую точку Кулиничей. Это стаканы, упаковка, меню, навигация, ценники, рекламная продукция и иные точки контакта с покупателями.</p>
+                            <div class="infographics" id="counter">
+                                <div class="infographic-item">
+                                    <div class="infographic-title counter-value" data-count="0">179</div>
+                                    <div class="infographic-descr">точек по всей Украине</div>
+                                </div>
+                                <div class="infographic-item">
+                                    <div class="infographic-title counter-value" data-count="0">12</div>
+                                    <div class="infographic-descr">городов</div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -163,6 +173,8 @@
                                 Опираясь на первые три компонента, мы обновили логотип, который стал более современным и дружелюбным. Вместе с тем добавилась фраза об основании предприятия, что подчеркнуло традиции и историю. А главные визуальные перемены заключались в работе с паттернами.
                                 Мы подготовили четыре базовых вариации паттернов и четыре пары цветов.
                             </p>
+                            <br />
+                            <br />
                         </div>
                     </div>
                     <div class="row flex flex-center">
@@ -428,7 +440,7 @@
 
         <!-- Main scripts. You can replace it, but I recommend you to leave it here     -->
         <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
-        <script src="assets/js/maincj6obx9lyj3jgzxgvi.min.js"></script>
+        <script src="assets/js/main.min.js"></script>
         <script type="text/javascript">
             var footerHeight = $('.footer').outerHeight();
         
@@ -450,11 +462,42 @@
         </script>
         <script type="text/javascript">
             $(window).on('load', function () {
-               var $preloader = $('#page-preloader'),
-                  $spinner   = $preloader.find('.spinner');
-               $spinner.delay(350).fadeOut('slow');
-               $preloader.delay(650).fadeOut('slow');
-             });
+            var $preloader = $('#page-preloader'),
+                $spinner   = $preloader.find('.spinner');
+            $spinner.delay(350).fadeOut('slow');
+            $preloader.delay(650).fadeOut('slow');
+            });
+        </script>
+        <script>
+            var a = 0;
+            $(window).scroll(function() {
+            var oTop = $('#counter').offset().top - window.innerHeight;
+            if (a == 0 && $(window).scrollTop() > oTop) {
+                $('.counter-value').each(function() {
+                var $this = $(this),
+                    countTo = $this.text();
+                $({
+                    countNum: $this.attr('data-count')
+                }).animate({
+                    countNum: countTo
+                    },
+                    {
+                    duration: 1600,
+                    easing: 'swing',
+                    step: function() {
+                        $this.text(Math.floor(this.countNum));
+                    },
+                    complete: function() {
+                        $this.text(this.countNum);
+                        //alert('finished');
+                    }
+    
+                    });
+                });
+                a = 1;
+            }
+    
+            });
         </script>
     </body>
 
