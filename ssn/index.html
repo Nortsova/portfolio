@@ -15,7 +15,7 @@
 
 
         <!--[if (gt IE 9)|!(IE)]><!-->
-        <link href="assets/css/mainfipuuyfho6cjyonbl0udi.min.css" rel="stylesheet" type="text/css">
+        <link href="assets/css/maindp4ov3kafaqnyhzxv42t9.min.css" rel="stylesheet" type="text/css">
         <!--<![endif]-->
 
         <meta property="og:title" content="" />
@@ -69,9 +69,8 @@
         </div>
 
         <div class="body-block">
-
             <div class="main-slide-block">
-                <header class="header">
+                <header class="header header-dark header-hide">
                     <div class="container">
                         <div class="header-inner">
                             <div class="logo">
@@ -163,32 +162,30 @@
                         <div class="item">
                             <img src="assets/images/content/main-slider/image09.jpg" alt="" />
                         </div>
-                    </div>
-                </div>
-
-                <div class="scroll-holder">
-                    <div class="container">
-                        <img src="assets/images/content/scroll.png" alt="">
-                    </div>
-                </div>
-            </div>
-
-            <div class="we_are" data-uk-scrollspy="{cls:'animation-block', repeat: false}">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-sm-8 col-sm-offset-2">
-                            <div class="text-center">
-                                <h2>Мы — SSN Design</h2>
-                            </div>
-                            <p>
-                                Мы работаем в сфере визуальных коммуникаций.
-                                <br />Дизайн для нас — не самоцель, дизайном мы решаем задачи. Делаем так, чтобы целевая аудитория поняла и полюбила бизнес клиента и его продукт. Доносим ключевые месседжи и&nbsp;информацию. Выделяем среди конкурентов.
-                                <br />Создаем стиль.
-                            </p>
+                        <div class="item">
+                            <img src="assets/images/content/main-slider/image10.jpg" alt="" />
                         </div>
                     </div>
+                    <div class="mouse mouse-hide">
+                        <img src="assets/images/general/mouse.png" alt="">
+                    </div>
                 </div>
             </div>
+
+            <!-- <div class="we_are" data-uk-scrollspy="{cls:'animation-block', repeat: false}">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-8 col-sm-offset-2">
+                <div class="text-center">
+                  <h2>Мы — SSN Design</h2>
+                </div>
+                <p>
+                  Мы работаем в сфере визуальных коммуникаций. <br />Дизайн для нас — не самоцель, дизайном мы решаем задачи. Делаем так, чтобы целевая аудитория поняла и полюбила бизнес клиента и его продукт. Доносим ключевые месседжи и&nbsp;информацию. Выделяем среди конкурентов. <br />Создаем стиль.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div> -->
             <div class="category" data-uk-scrollspy="{cls:'animation-block', repeat: false}">
                 <div class="container">
                     <div class="row">
@@ -364,6 +361,16 @@
                         </svg>
                     </div>
                     <div class="owl-carousel journal-carousel">
+                        <div class="item">
+                            <div>
+                                <span>20.02.2018</span>
+                                <h4>Отзыв о проекте по редизайну фирменного стиля ТМ «Кулиничи»</h4>
+                                <p>
+                                    Екатерина Степанова, координатор проекта со стороны Клиента
+                                </p>
+                            </div>
+                            <a href="journal_kulinichi.html" class="link"><strong>ЧИТАТЬ</strong> <span class="icon icon-arrow-right"></span></a>
+                        </div>
                         <div class="item">
                             <div>
                                 <span>24.02.2017</span>
@@ -990,7 +997,7 @@
         </svg>
         <!-- Main scripts. You can replace it, but I recommend you to leave it here     -->
         <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
-        <script src="assets/js/mainfipuuyfho6cjyonbl0udi.min.js"></script>
+        <script src="assets/js/maindp4ov3kafaqnyhzxv42t9.min.js"></script>
         <script type="text/javascript">
             $('.journal-carousel').owlCarousel({
                 loop:false,
@@ -1053,9 +1060,11 @@
                         i++;
                         if (i > length) {
                             clearInterval(interval);
+                            $('.header').removeClass('header-hide');
+                            $('.mouse').removeClass('mouse-hide');
                         }
                     },500);
-                 },1300);
+                 },1450);
               });
         </script>
 

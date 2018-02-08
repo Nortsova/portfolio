@@ -2538,62 +2538,6 @@ html, body {
   display: none !important;
 }
 
-.btn {
-  padding: 20px 32px;
-  display: inline-block;
-  border: 2px solid transparent;
-  text-transform: uppercase;
-  /* min-width: 220px; */
-  font-size: 20px;
-  letter-spacing: 2px;
-  font-family: "ralewaysemibold";
-  text-align: center;
-  background: transparent;
-}
-
-.btn-info {
-  color: #fff;
-  border-color: #fff;
-}
-
-.btn-info:hover, .btn-info:focus, .btn-info:active {
-  background-color: #fff;
-  color: #1ba8e0;
-}
-
-.btn-main {
-  color: #000;
-  border-color: #000;
-}
-
-.btn-main:hover, .btn-main:focus, .btn-main:active {
-  background-color: #000;
-  color: #fff;
-}
-
-.btn:hover, .btn:focus, .btn:active {
-  text-decoration: none;
-  outline: none;
-}
-
-.btn-holder {
-  padding: 80px 0 0;
-}
-
-@media (max-width: 991px) {
-  .btn-holder {
-    padding: 80px 0 0;
-  }
-}
-
-.btn-holder-min {
-  padding: 60px 0 0;
-}
-
-.btn-full {
-  display: block;
-}
-
 /*
  *  Owl Carousel - Core
  */
@@ -2873,6 +2817,62 @@ html, body {
 
 .content-slider .owl-dot.active, .content-slider .owl-dot:hover {
   background-color: #6dcff6;
+}
+
+.btn {
+  padding: 20px 32px;
+  display: inline-block;
+  border: 2px solid transparent;
+  text-transform: uppercase;
+  /* min-width: 220px; */
+  font-size: 20px;
+  letter-spacing: 2px;
+  font-family: "ralewaysemibold";
+  text-align: center;
+  background: transparent;
+}
+
+.btn-info {
+  color: #fff;
+  border-color: #fff;
+}
+
+.btn-info:hover, .btn-info:focus, .btn-info:active {
+  background-color: #fff;
+  color: #1ba8e0;
+}
+
+.btn-main {
+  color: #000;
+  border-color: #000;
+}
+
+.btn-main:hover, .btn-main:focus, .btn-main:active {
+  background-color: #000;
+  color: #fff;
+}
+
+.btn:hover, .btn:focus, .btn:active {
+  text-decoration: none;
+  outline: none;
+}
+
+.btn-holder {
+  padding: 80px 0 0;
+}
+
+@media (max-width: 991px) {
+  .btn-holder {
+    padding: 80px 0 0;
+  }
+}
+
+.btn-holder-min {
+  padding: 60px 0 0;
+}
+
+.btn-full {
+  display: block;
 }
 
 .flex {
@@ -3485,6 +3485,13 @@ input[type="search"] {
   top: 0;
   z-index: 100;
   padding: 30px 0;
+  opacity: 1;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  -webkit-transition: opacity .4s ease, -webkit-transform .4s ease;
+  transition: opacity .4s ease, -webkit-transform .4s ease;
+  transition: transform .4s ease, opacity .4s ease;
+  transition: transform .4s ease, opacity .4s ease, -webkit-transform .4s ease;
 }
 
 .header-list {
@@ -3588,6 +3595,12 @@ input[type="search"] {
   z-index: 12;
   -webkit-transform: translateY(0);
           transform: translateY(0);
+}
+
+.header-hide {
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+  opacity: 0;
 }
 
 @media (min-width: 992px) {
@@ -3832,12 +3845,6 @@ a.logo:hover, a.logo:focus, a.logo:active {
   }
 }
 
-@media (max-width: 767px) {
-  .journal-page h1 {
-    font-size: 14vw;
-  }
-}
-
 .journal-page .back {
   color: #5f5f5f;
   font-family: "ralewaysemibold";
@@ -3995,19 +4002,10 @@ a.logo:hover, a.logo:focus, a.logo:active {
   overflow: hidden;
 }
 
-.main-slide-img img {
-  width: 120%;
-}
-
 @media (max-width: 767px) {
   .main-slide-img {
     width: 100%;
     overflow: hidden;
-  }
-  .main-slide-img img {
-    width: 300%;
-    max-width: 300%;
-    margin: 0 0 0 -130%;
   }
 }
 
@@ -4015,6 +4013,28 @@ a.logo:hover, a.logo:focus, a.logo:active {
   .main-slide-img {
     max-height: 100vh;
   }
+}
+
+.mouse {
+  position: absolute;
+  bottom: 140px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  z-index: 10;
+  opacity: 1;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  -webkit-transition: opacity .4s ease, -webkit-transform .4s ease;
+  transition: opacity .4s ease, -webkit-transform .4s ease;
+  transition: transform .4s ease, opacity .4s ease;
+  transition: transform .4s ease, opacity .4s ease, -webkit-transform .4s ease;
+}
+
+.mouse-hide {
+  -webkit-transform: translateY(100%);
+          transform: translateY(100%);
+  opacity: 0;
 }
 
 .we_are {
@@ -4351,13 +4371,13 @@ a.logo:hover, a.logo:focus, a.logo:active {
 
 @media (max-width: 991px) {
   .project-item .overflow {
-    padding: 30px;
+    padding: 10px;
   }
 }
 
 @media (max-width: 479px) {
   .project-item .overflow {
-    padding: 16px;
+    padding: 8px;
   }
 }
 
@@ -4388,15 +4408,15 @@ a.logo:hover, a.logo:focus, a.logo:active {
 
 @media (max-width: 1199px) {
   .project-item .overflow-inner .btn {
-    margin-top: 10px;
+    margin-top: 5px;
   }
 }
 
 @media (max-width: 991px) {
   .project-item .overflow-inner .btn {
-    padding: 8px 10px;
-    font-size: 1em;
-    margin-top: 2px;
+    padding: 4px 8px;
+    font-size: 12px;
+    margin-top: 1px;
   }
 }
 
@@ -4414,13 +4434,13 @@ a.logo:hover, a.logo:focus, a.logo:active {
 
 @media (max-width: 767px) {
   .project-item .overflow-inner {
-    padding: 40px;
+    padding: 14px;
   }
 }
 
 @media (max-width: 479px) {
   .project-item .overflow-inner {
-    padding: 20px;
+    padding: 12px;
   }
 }
 
@@ -4447,13 +4467,13 @@ a.logo:hover, a.logo:focus, a.logo:active {
 
 @media (max-width: 767px) {
   .project-item .overflow-inner h3 {
-    font-size: 34px;
+    font-size: 20px;
   }
 }
 
 @media (max-width: 479px) {
   .project-item .overflow-inner h3 {
-    font-size: 22px;
+    font-size: 18px;
   }
 }
 
@@ -4473,19 +4493,13 @@ a.logo:hover, a.logo:focus, a.logo:active {
 
 @media (max-width: 991px) {
   .project-item .overflow-inner h4 {
-    font-size: 22px;
+    font-size: 18px;
   }
 }
 
 @media (max-width: 767px) {
   .project-item .overflow-inner h4 {
-    font-size: 34px;
-  }
-}
-
-@media (max-width: 479px) {
-  .project-item .overflow-inner h4 {
-    font-size: 20px;
+    font-size: 14px;
   }
 }
 
@@ -4727,7 +4741,7 @@ a.logo:hover, a.logo:focus, a.logo:active {
   margin: 0;
   line-height: 1;
   font-size: 45px;
-  letter-spacing: 0.5px;
+  letter-spacing: -0.2px;
   font-family: "ralewayblack";
 }
 
@@ -4822,8 +4836,8 @@ a.logo:hover, a.logo:focus, a.logo:active {
             animation-name: uk-fade;
     -webkit-animation-duration: 0.57s;
             animation-duration: 0.57s;
-    -webkit-animation-timing-function: ease-in-out !important;
-            animation-timing-function: ease-in-out !important;
+    -webkit-animation-timing-function: ease-in !important;
+            animation-timing-function: ease-in !important;
   }
 }
 
@@ -4833,8 +4847,8 @@ a.logo:hover, a.logo:focus, a.logo:active {
             animation-name: uk-fade-left;
     -webkit-animation-duration: 1.2s;
             animation-duration: 1.2s;
-    -webkit-animation-timing-function: ease-in-out !important;
-            animation-timing-function: ease-in-out !important;
+    -webkit-animation-timing-function: ease-in !important;
+            animation-timing-function: ease-in !important;
   }
 }
 
